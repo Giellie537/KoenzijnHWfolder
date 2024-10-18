@@ -1,23 +1,42 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Door : MonoBehaviour
 {
 
-public Phone phone;
+Animator animator;
 public Text text;
-public Bord bord;
+public phone Phone;
+public Questclose questclose;
 
-public void open() {
-    if(phone.gepakt == true && bord.ingeschreven == true) {
-    animator.SetTrigger("dooropen");
+
+    void Start()
+    {
+         animator = GetComponent<Animator>();
+
     }
-    else {
-        text.text = "I can't leave yet\nI still have to grab something";
+
+public void klik1() {
+    if (Phone.gepakt == true && questclose.added == true){
+        animator.SetTrigger("dooropen");
     }
+
+     
+
+     else {
+        text.text = "I cannot leave yet\nI still have to grab something";
+        text.enabled = true;
+
+        StartCoroutine(Textweg());
+     }
 }
 
+     IEnumerator Textweg() {
+        yield return new WaitForSeconds(3);
+        text.enabled = false;
+     }
 
 
 

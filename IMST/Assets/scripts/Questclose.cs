@@ -12,6 +12,8 @@ public class Questclose : MonoBehaviour
     public PlayerMove playermove;
     public CameraLookDetector cameralookdetector;
 
+    public bool added = false;
+
 
     public void close(){ 
         questboard.SetActive(false);
@@ -25,6 +27,7 @@ public class Questclose : MonoBehaviour
 
     public void clickadd() {
     GetComponent<Image>().color = Color.green;
+    added = true;
     }
 
 }
