@@ -466,6 +466,72 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &162196854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 162196857}
+  - component: {fileID: 162196856}
+  - component: {fileID: 162196855}
+  m_Layer: 0
+  m_Name: outside
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &162196855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162196854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcabf278ca59c44f5b6349c075b6b193, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &162196856
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162196854}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.4325657, y: 1, z: 1}
+  m_Center: {x: 0.5675955, y: 0, z: 0}
+--- !u!4 &162196857
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162196854}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 30.09, y: 7.46, z: 6.58}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &164935210
 GameObject:
   m_ObjectHideFlags: 0
@@ -3007,8 +3073,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.2433519, z: 0.96638584}
+  m_Center: {x: 0, y: 0.12167597, z: -0.01680708}
 --- !u!23 &1394332934
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3110,7 +3176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Agnes
+    name: Angie
     sentences:
     - Hello Koen, Are you here to help me with the quest I placed?
     - Wonderfull, I need 4kg of flouwer and 3 liters of milk. Can you get that for
@@ -3585,7 +3651,7 @@ Transform:
   m_GameObject: {fileID: 2075715788}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.18262514, z: -0, w: 0.9831826}
-  m_LocalPosition: {x: 39.37, y: 8.18, z: -2.86}
+  m_LocalPosition: {x: 31.57, y: 8.18, z: -0.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3778,3 +3844,4 @@ SceneRoots:
   - {fileID: 516842615}
   - {fileID: 2075715795}
   - {fileID: 1147515691}
+  - {fileID: 162196857}
