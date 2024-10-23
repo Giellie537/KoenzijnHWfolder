@@ -10,6 +10,9 @@ public class Quests : MonoBehaviour
     public GameObject QuestDropdown;
     public bool triggered = false;
     public phone Phone;
+    public GameObject QuestExtra;
+
+    public bool extended = false;
 
     // Start is called before the first frame update
     void Start()
@@ -32,5 +35,16 @@ public class Quests : MonoBehaviour
                 Cursor.visible = false;
                 Cursor.lockState = CursorLockMode.Locked;
             }
+    }
+
+    public void extend(){
+        if(extended == false){
+            QuestExtra.SetActive(true);
+            extended = true;
+        }
+        else{
+            QuestExtra.SetActive(false);
+            extended = false;
+        }
     }
 }
