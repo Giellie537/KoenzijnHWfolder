@@ -13,6 +13,10 @@ public class PlayerLook : MonoBehaviour
     public float lookSpeed = 3.0f;
     private Vector2 rotation = Vector2.zero;
 
+    //Louise heeft dit toegevoegd
+    public Quests quests;
+    //------------------------------
+
     void Start()
     {
       Cursor.visible = false;
@@ -25,5 +29,12 @@ public class PlayerLook : MonoBehaviour
       rotation.x = Mathf.Clamp(rotation.x, -15f, 15f);
       transform.eulerAngles = new Vector2(0,rotation.y) * lookSpeed;
       Camera.main.transform.localRotation = Quaternion.Euler(rotation.x * lookSpeed, 0, 0);
+
+//Louise heeft dit toegevoegd
+      if(quests.triggered == true){
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+      }
+//---------------------------------------
     }
 }
