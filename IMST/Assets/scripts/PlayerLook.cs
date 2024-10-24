@@ -13,9 +13,9 @@ public class PlayerLook : MonoBehaviour
     public float lookSpeed = 3.0f;
     private Vector2 rotation = Vector2.zero;
 
-    //Louise heeft dit toegevoegd
+//Louise heeft dit toegevoegd
     public Quests quests;
-    //------------------------------
+//------------------------------
 
     void Start()
     {

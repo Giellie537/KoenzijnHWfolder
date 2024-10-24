@@ -276,6 +276,7 @@ MonoBehaviour:
   playermove: {fileID: 975685076}
   playerlook: {fileID: 975685075}
   cameralookdetector: {fileID: 1822420767}
+<<<<<<< Updated upstream
 --- !u!1001 &104540425
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -398,6 +399,61 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1672069375}
   m_SourcePrefab: {fileID: 100100000, guid: 90cd441f0a0854c8cb8d62ac504f0870, type: 3}
+=======
+--- !u!1 &253371361
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 253371363}
+  - component: {fileID: 253371362}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &253371362
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253371361}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &253371363
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253371361}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 34.27, y: 7.4, z: 8.212}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> Stashed changes
 --- !u!1 &406245447
 GameObject:
   m_ObjectHideFlags: 0
@@ -2524,6 +2580,10 @@ SceneRoots:
   - {fileID: 975685080}
   - {fileID: 54020960}
   - {fileID: 636243818}
+<<<<<<< Updated upstream
   - {fileID: 1787887185}
   - {fileID: 343160045}
   - {fileID: 104540425}
+=======
+  - {fileID: 253371363}
+>>>>>>> Stashed changes

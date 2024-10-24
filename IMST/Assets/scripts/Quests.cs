@@ -8,11 +8,12 @@ public class Quests : MonoBehaviour
 
     public GameObject QuestIndicator;
     public GameObject QuestDropdown;
-    public bool triggered = false;
-    public phone Phone;
     public GameObject QuestExtra;
 
+    public phone Phone;
+    
     public bool extended = false;
+    public bool triggered = false;
 
     // Start is called before the first frame update
     void Start()
