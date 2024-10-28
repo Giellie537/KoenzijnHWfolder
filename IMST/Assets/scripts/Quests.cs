@@ -15,11 +15,7 @@ public class Quests : MonoBehaviour
     public bool extended = false;
     public bool triggered = false;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
+    
 
     // Update is called once per frame
     void Update()
@@ -35,6 +31,7 @@ public class Quests : MonoBehaviour
                 triggered = false;
                 Cursor.visible = false;
                 Cursor.lockState = CursorLockMode.Locked;
+                QuestExtra.SetActive(false);
             }
     }
 
