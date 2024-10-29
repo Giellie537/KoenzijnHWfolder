@@ -15,6 +15,14 @@ public class DialogueManager : MonoBehaviour {
 
 	private Queue<string> sentences;
 
+	//references voor quest
+	public Image buttonimage;
+    public Button buttonbutton;
+    public GameObject TextParent;
+    public Text Questtext;
+    public Text Fromtext;
+    public Text Desctext;
+
 	// Use this for initialization
 	void Start () {
 		sentences = new Queue<string>();
@@ -66,6 +74,20 @@ public class DialogueManager : MonoBehaviour {
 	{
         DialogueMan.SetActive(false);
         sentences = new Queue<string>();
+		Debug.Log("end");
+
+		//doe cijfertje bij de counter
+        QuestsuestSystem.instance.addquest();
+        
+        //make button visible
+        buttonimage.enabled = true;
+        buttonbutton.enabled = true;
+        TextParent.SetActive(true);
+
+        //change quest description etc
+        Questtext.text = "Groceries";
+        Fromtext.text = "Angie";
+        Desctext.text = "Get groceries for Angie";
     }
 
 }
