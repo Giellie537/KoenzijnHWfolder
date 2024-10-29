@@ -15,8 +15,6 @@ public class Quests : MonoBehaviour
     public bool extended = false;
     public bool triggered = false;
 
-    
-
     // Update is called once per frame
     void Update()
     {
@@ -33,6 +31,7 @@ public class Quests : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Locked;
                 QuestExtra.SetActive(false);
             }
+        
     }
 
     public void extend(){
