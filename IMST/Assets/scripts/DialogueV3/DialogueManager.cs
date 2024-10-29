@@ -15,13 +15,11 @@ public class DialogueManager : MonoBehaviour {
 
 	private Queue<string> sentences;
 
-	//references voor quest
-	public Image buttonimage;
-    public Button buttonbutton;
-    public GameObject TextParent;
-    public Text Questtext;
-    public Text Fromtext;
-    public Text Desctext;
+	//reference notification
+	public GameObject notif;
+    public Text notiftext;
+
+	public Text questinfo;
 
 	// Use this for initialization
 	void Start () {
@@ -76,18 +74,17 @@ public class DialogueManager : MonoBehaviour {
         sentences = new Queue<string>();
 		Debug.Log("end");
 
-		//doe cijfertje bij de counter
-        QuestsuestSystem.instance.addquest();
-        
-        //make button visible
-        buttonimage.enabled = true;
-        buttonbutton.enabled = true;
-        TextParent.SetActive(true);
+        //notification
+        notif.SetActive(true);
+        notiftext.text = "Quest details added";
+		questinfo.text = "4kg flour/n3 L milk";
+        StartCoroutine(Textweg());
 
-        //change quest description etc
-        Questtext.text = "Groceries";
-        Fromtext.text = "Angie";
-        Desctext.text = "Get groceries for Angie";
     }
+
+        IEnumerator Textweg() {
+        yield return new WaitForSeconds(3);
+        notif.SetActive(false);
+     }
 
 }
