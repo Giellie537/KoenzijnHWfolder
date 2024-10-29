@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/main.unity
+    path: Assets/versies/main.unity
     guid: d775ee9fe2f214cfe9876058da4e8097
   - enabled: 1
     path: Assets/versies/outside.unity
@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/versies/KoensHuis.unity
     guid: 88967279c0ff6494894f366532d723e7
   - enabled: 1
-    path: Assets/Scenes/oldlady.unity
+    path: Assets/versies/oldlady.unity
     guid: b8f5f6bfe5e69452fa4944346b84ceb9
   - enabled: 1
     path: Assets/Scenes/supermarkt.unity
