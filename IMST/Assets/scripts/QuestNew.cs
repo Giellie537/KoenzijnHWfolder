@@ -12,6 +12,9 @@ public class NewBehaviourScript : MonoBehaviour
     public Text Fromtext;
     public Text Desctext;
 
+    public GameObject notif;
+    public Text notiftext;
+
 
     void OnTriggerEnter() {
         //doe cijfertje bij de counter
@@ -26,5 +29,15 @@ public class NewBehaviourScript : MonoBehaviour
         Questtext.text = "Groceries";
         Fromtext.text = "Angie";
         Desctext.text = "Get groceries for Angie";
+
+        //notification
+        notif.SetActive(true);
+        notiftext.text = "Quest added";
+        StartCoroutine(Textweg());
     }
+
+        IEnumerator Textweg() {
+        yield return new WaitForSeconds(3);
+        notif.SetActive(false);
+     }
 }
