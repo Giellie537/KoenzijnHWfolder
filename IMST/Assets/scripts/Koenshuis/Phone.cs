@@ -11,13 +11,14 @@ public Text text;
 public bool gepakt = false;
 public MeshRenderer meshrenderer;
 
+
     public void oppakken() {
         meshrenderer.enabled = false;
         gepakt = true;
 
         text.text = "Press Q to view quests";
         text.enabled = true;
-
+      
         StartCoroutine(Textweg());
 
         Questoverlay.SetActive(true);

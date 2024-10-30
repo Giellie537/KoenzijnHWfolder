@@ -1,0 +1,27 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+
+
+public class papier : MonoBehaviour
+
+{
+private AudioSource audioSource;
+public AudioClip Papiergeluid;
+ 
+
+
+ void Start(){
+ audioSource = GetComponent<AudioSource>();
+        
+}
+    // Start is called before the first frame update
+  public void geluid(){
+// if (papiergeluid != null){
+    audioSource.PlayOneShot(Papiergeluid);
+// }
+        
+    
+  }
+}
