@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/versies/oldlady.unity
     guid: b8f5f6bfe5e69452fa4944346b84ceb9
   - enabled: 1
-    path: Assets/Scenes/supermarkt.unity
+    path: Assets/versies/supermarkt.unity
     guid: 58f1eb850365fd04692c83711281e415
   - enabled: 1
     path: Assets/Scenes/outside 3.1.unity
