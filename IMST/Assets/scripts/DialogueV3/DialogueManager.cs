@@ -77,7 +77,7 @@ public class DialogueManager : MonoBehaviour {
         //notification
         notif.SetActive(true);
         notiftext.text = "Quest details added";
-		questinfo.text = "4kg flour/n3 L milk";
+		questinfo.text = "4kg flour\n3 L milk";
         StartCoroutine(Textweg());
 
     }
