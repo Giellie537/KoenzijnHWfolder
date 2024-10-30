@@ -10,17 +10,19 @@ Animator animator;
 public Text text;
 public phone Phone;
 public Questclose questclose;
-
+private AudioSource audioSource;
+public AudioClip Papiergeluid;
 
     void Start()
     {
          animator = GetComponent<Animator>();
-
+        audioSource = GetComponent<AudioSource>();
     }
 
 public void klik1() {
     if (Phone.gepakt == true && questclose.added == true){
         animator.SetTrigger("dooropen");
+        audioSource.PlayOneShot(Papiergeluid);
     }
 
      

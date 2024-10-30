@@ -5,13 +5,16 @@ using UnityEngine.UI;
 
 public class phone : MonoBehaviour
 {
-
+private AudioSource AudioSource;
+public AudioClip Papiergeluid;
 public GameObject Questoverlay;
 public Text text;
 public bool gepakt = false;
 public MeshRenderer meshrenderer;
 
-
+void Start(){
+     AudioSource = GetComponent<AudioSource>();
+}
     public void oppakken() {
         meshrenderer.enabled = false;
         gepakt = true;
@@ -20,7 +23,7 @@ public MeshRenderer meshrenderer;
         text.enabled = true;
       
         StartCoroutine(Textweg());
-
+        AudioSource.enabled = false;
         Questoverlay.SetActive(true);
     }
 

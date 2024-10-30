@@ -11598,6 +11598,7 @@ MonoBehaviour:
   text: {fileID: 1796337461}
   Phone: {fileID: 1108405554}
   questclose: {fileID: 756129171}
+  Papiergeluid: {fileID: 8300000, guid: 70a9d7ae4a07f4d8fac21d8faa229026, type: 3}
 --- !u!114 &1959385642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11745,7 +11746,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
