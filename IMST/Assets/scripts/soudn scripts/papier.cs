@@ -18,10 +18,6 @@ public AudioClip Papiergeluid;
 }
     // Start is called before the first frame update
   public void geluid(){
-// if (papiergeluid != null){
-    audioSource.PlayOneShot(Papiergeluid);
-// }
-        
-    
+  audioSource.PlayOneShot(Papiergeluid);
   }
 }

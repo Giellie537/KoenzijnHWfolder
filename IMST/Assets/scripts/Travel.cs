@@ -12,7 +12,15 @@ public class Travel : MonoBehaviour
     public PlayerMove playermove;
     public PlayerLook playerlook;
     public CameraLookDetector cameralookdetector;
+    private AudioSource audioSource;
+    public AudioClip Papiergeluid;
 
+     void Start(){
+         audioSource = GetComponent<AudioSource>();
+    
+
+    
+  }
     public void travelinteract() {
         travelUI.SetActive(true);
         Cursor.visible = true;
@@ -41,6 +49,7 @@ public class Travel : MonoBehaviour
         Cursor.visible = false;
         crosshair.SetActive(true);
         Cursor.lockState = CursorLockMode.Locked;
+        audioSource.PlayOneShot(Papiergeluid);
     }
 
     public void travelmain() {
@@ -50,6 +59,7 @@ public class Travel : MonoBehaviour
         Cursor.visible = false;
         crosshair.SetActive(true);
         Cursor.lockState = CursorLockMode.Locked;
+        audioSource.PlayOneShot(Papiergeluid);
     }
 
     public void travelsupermarkt() {
@@ -59,6 +69,7 @@ public class Travel : MonoBehaviour
         Cursor.visible = false;
         crosshair.SetActive(true);
         Cursor.lockState = CursorLockMode.Locked;
+        audioSource.PlayOneShot(Papiergeluid);
     }
 
     public void travelhome() {
@@ -68,6 +79,7 @@ public class Travel : MonoBehaviour
         Cursor.visible = false;
         crosshair.SetActive(true);
         Cursor.lockState = CursorLockMode.Locked;
+        audioSource.PlayOneShot(Papiergeluid);
     }
 
 }
