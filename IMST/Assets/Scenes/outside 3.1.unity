@@ -8149,11 +8149,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   travelUI: {fileID: 1424878878}
-  koen: {fileID: 0}
-  crosshair: {fileID: 0}
-  playermove: {fileID: 0}
-  playerlook: {fileID: 0}
-  cameralookdetector: {fileID: 0}
+  koen: {fileID: 949684858}
+  crosshair: {fileID: 1991602197}
+  playermove: {fileID: 949684861}
+  playerlook: {fileID: 949684860}
+  cameralookdetector: {fileID: 2075186804}
   Papiergeluid: {fileID: 0}
 --- !u!114 &391481384
 MonoBehaviour:
