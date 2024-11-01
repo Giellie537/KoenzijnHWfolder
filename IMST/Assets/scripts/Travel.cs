@@ -39,6 +39,7 @@ public class Travel : MonoBehaviour
         playermove.enabled = true;
         playerlook.enabled = true;
         cameralookdetector.enabled = true;
+        Debug.Log("close");
 
     }
 
@@ -63,7 +64,7 @@ public class Travel : MonoBehaviour
     }
 
     public void travelsupermarkt() {
-        SceneManager.LoadScene("supermarkt", LoadSceneMode.Single);
+        SceneManager.LoadScene("supermarkt1.2", LoadSceneMode.Single);
          travelUI.SetActive(false);
         koen.SetActive(true);
         Cursor.visible = false;
