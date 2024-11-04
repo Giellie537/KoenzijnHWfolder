@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/versies/supermarkt.unity
     guid: 58f1eb850365fd04692c83711281e415
   - enabled: 1
-    path: Assets/Scenes/outside 3.1.unity
+    path: Assets/versies/outside 3.1.unity
     guid: ddc243bd8dbd5744c94fd93a0513a4ed
   - enabled: 1
     path: Assets/Scenes/supermarkt1.2.unity
