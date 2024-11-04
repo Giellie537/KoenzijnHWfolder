@@ -3587,8 +3587,11 @@ GameObject:
   m_Component:
   - component: {fileID: 615958425}
   - component: {fileID: 615958424}
+  - component: {fileID: 615958428}
+  - component: {fileID: 615958427}
+  - component: {fileID: 615958426}
   m_Layer: 0
-  m_Name: trigger May
+  m_Name: maytrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3611,7 +3614,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 19.080875}
   m_Center: {x: 0, y: 0, z: -9.040438}
@@ -3624,12 +3627,77 @@ Transform:
   m_GameObject: {fileID: 615958423}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.85, y: 7.55, z: 7.89}
+  m_LocalPosition: {x: -2.26, y: 7.55, z: 7.89}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &615958426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615958423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 921bf333020e54f8ba5e730f0971f2d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueMan: {fileID: 204134372}
+  nameText: {fileID: 1249976217}
+  dialogueText: {fileID: 662778585}
+  autoCloseInTime: 5
+  notif: {fileID: 0}
+  notiftext: {fileID: 0}
+  questinfo: {fileID: 0}
+--- !u!114 &615958427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615958423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca5080adfad054d42b940c47760723dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: May
+    sentences:
+    - Hey Koen!
+  Papiergeluid: {fileID: 0}
+--- !u!114 &615958428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615958423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: decbc2b7e688e4c9d86f858dc1afc70a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: 
+  cursor: {fileID: 0}
+  interactFunction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 615958427}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &641447928
 GameObject:
   m_ObjectHideFlags: 0
@@ -4052,7 +4120,7 @@ MonoBehaviour:
   dialogue:
     name: May
     sentences:
-    - Hey Koen!
+    - 
   Papiergeluid: {fileID: 0}
 --- !u!114 &725507232
 MonoBehaviour:
@@ -4067,7 +4135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  cursor: {fileID: 0}
+  cursor: {fileID: 21300000, guid: e9715cc6f015ad4439b371a79b6c7562, type: 3}
   interactFunction:
     m_PersistentCalls:
       m_Calls:
@@ -4165,7 +4233,7 @@ Transform:
   m_GameObject: {fileID: 725507229}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.16, y: 8.49, z: 10.64}
+  m_LocalPosition: {x: 1.12, y: 8.49, z: 10.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
