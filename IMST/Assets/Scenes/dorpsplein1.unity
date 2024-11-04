@@ -1736,7 +1736,7 @@ GameObject:
   - component: {fileID: 314672351}
   - component: {fileID: 314672350}
   m_Layer: 0
-  m_Name: Sarah
+  m_Name: Tim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1770,11 +1770,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Sarah
+    name: Tim
     sentences:
-    - Can you help me Koen?
-    - My car broke down.
-    - Can you help me move it?
+    - Bad interaction
   Papiergeluid: {fileID: 0}
 --- !u!114 &314672351
 MonoBehaviour:
@@ -2149,7 +2147,7 @@ GameObject:
   - component: {fileID: 361505893}
   - component: {fileID: 361505892}
   m_Layer: 0
-  m_Name: Agnes (3)
+  m_Name: May
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2298,12 +2296,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Angie
+    name: May
     sentences:
-    - Hello Koen, Are you here to help me with the quest I placed?
-    - Wonderfull, I need 4kg of flouwer and 3 liters of milk. Can you get that for
-      me from the store?
-    - Thank you.
+    - 'Good interaction
+
+'
   Papiergeluid: {fileID: 8300000, guid: 4158eac354f344025b20b767a986a6fc, type: 3}
 --- !u!114 &361505895
 MonoBehaviour:
@@ -6372,7 +6369,7 @@ GameObject:
   - component: {fileID: 1272958190}
   - component: {fileID: 1272958189}
   m_Layer: 0
-  m_Name: Agnes (1)
+  m_Name: Agnes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6523,10 +6520,7 @@ MonoBehaviour:
   dialogue:
     name: Angie
     sentences:
-    - Hello Koen, Are you here to help me with the quest I placed?
-    - Wonderfull, I need 4kg of flouwer and 3 liters of milk. Can you get that for
-      me from the store?
-    - Thank you.
+    - Good interaction
   Papiergeluid: {fileID: 8300000, guid: 4158eac354f344025b20b767a986a6fc, type: 3}
 --- !u!114 &1272958192
 MonoBehaviour:
@@ -7174,7 +7168,7 @@ GameObject:
   - component: {fileID: 1428575738}
   - component: {fileID: 1428575737}
   m_Layer: 0
-  m_Name: Agnes (2)
+  m_Name: Sarah
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7323,12 +7317,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Angie
+    name: Sarah
     sentences:
-    - Hello Koen, Are you here to help me with the quest I placed?
-    - Wonderfull, I need 4kg of flouwer and 3 liters of milk. Can you get that for
-      me from the store?
-    - Thank you.
+    - 'Good interaction
+
+'
   Papiergeluid: {fileID: 8300000, guid: 4158eac354f344025b20b767a986a6fc, type: 3}
 --- !u!114 &1428575740
 MonoBehaviour:
@@ -7883,7 +7876,7 @@ GameObject:
   - component: {fileID: 1502614364}
   - component: {fileID: 1502614363}
   m_Layer: 0
-  m_Name: Agnes (4)
+  m_Name: Guy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8032,12 +8025,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Angie
+    name: Guy
     sentences:
-    - Hello Koen, Are you here to help me with the quest I placed?
-    - Wonderfull, I need 4kg of flouwer and 3 liters of milk. Can you get that for
-      me from the store?
-    - Thank you.
+    - 'Bad interaction
+
+'
   Papiergeluid: {fileID: 8300000, guid: 4158eac354f344025b20b767a986a6fc, type: 3}
 --- !u!114 &1502614366
 MonoBehaviour:
@@ -10612,7 +10604,7 @@ GameObject:
   - component: {fileID: 1962744519}
   - component: {fileID: 1962744518}
   m_Layer: 0
-  m_Name: Agnes
+  m_Name: Gerard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10746,12 +10738,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Angie
+    name: Gerard
     sentences:
-    - Hello Koen, Are you here to help me with the quest I placed?
-    - Wonderfull, I need 4kg of flouwer and 3 liters of milk. Can you get that for
-      me from the store?
-    - Thank you.
+    - 'Bad interaction
+
+'
   Papiergeluid: {fileID: 8300000, guid: 4158eac354f344025b20b767a986a6fc, type: 3}
 --- !u!114 &1962744521
 MonoBehaviour:
