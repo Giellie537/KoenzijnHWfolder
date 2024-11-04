@@ -12,11 +12,12 @@ public class footSteps : MonoBehaviour
 
   // LIST OF TERRAINS
   public AudioSource footstepGrass;  // 1
-  public AudioSource footstepFloor;
+  public AudioSource footstepSnow;
 
 
   private void Start(){
     terrainFootNext = terrainFootPrev = footstepGrass;  // 0 - PLAYER STARTING TERRAIN
+
   }
 
 
@@ -25,6 +26,7 @@ public class footSteps : MonoBehaviour
     audioSource = GetComponent<AudioSource>();
 
     terrainFoot = FindObjectOfType<TerrainDetector>().PlayerTerrain();
+    Debug.Log(terrainFoot);
 
 
         if( Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) ||
@@ -37,9 +39,9 @@ public class footSteps : MonoBehaviour
                           footstepGrass.enabled   = true;   // 2
                           terrainFootPrev = footstepGrass;  // 2
                           break;
-                    case "floor":
-                          footstepFloor.enabled   = true;
-                          terrainFootPrev = footstepFloor;
+                    case "SNOW":
+                          footstepSnow.enabled   = true;
+                          terrainFootPrev = footstepSnow;
                           break;
                     default:
                           break;
@@ -55,7 +57,7 @@ public class footSteps : MonoBehaviour
 
             }else{
               footstepGrass.enabled = false;  // 3
-              footstepFloor.enabled = false;
+              footstepSnow.enabled = false;
 
             }
 

@@ -23065,14 +23065,14 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 949684858}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 587d4916cbf674eb696dc612e63eccb6, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -23263,7 +23263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   footstepGrass: {fileID: 949684871}
-  footstepFloor: {fileID: 949684871}
+  footstepSnow: {fileID: 949684870}
 --- !u!1001 &957622859
 PrefabInstance:
   m_ObjectHideFlags: 0
