@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/versies/Dorpsplein.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/versies/KoensHuis.unity
     guid: 88967279c0ff6494894f366532d723e7
   - enabled: 1
@@ -29,4 +29,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/supermarkt1.2.unity
     guid: 4edb61f91aff08849a2dde2766b3bfc9
+  - enabled: 1
+    path: Assets/Scenes/menucontrols.unity
+    guid: 201e86b25d66c1940a6fe724b77f4ef6
+  - enabled: 1
+    path: Assets/Scenes/menu.unity
+    guid: 388a031ed6b7e3a47815541e770208ed
+  - enabled: 1
+    path: Assets/Scenes/koenshuis 6.2.unity
+    guid: bd46c2d48abdeec418c4dbc96119e382
   m_configObjects: {}
