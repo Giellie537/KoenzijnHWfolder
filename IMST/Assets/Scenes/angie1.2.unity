@@ -4097,9 +4097,8 @@ GameObject:
   m_Component:
   - component: {fileID: 615958425}
   - component: {fileID: 615958424}
-  - component: {fileID: 615958429}
-  - component: {fileID: 615958427}
-  - component: {fileID: 615958426}
+  - component: {fileID: 615958430}
+  - component: {fileID: 615958431}
   m_Layer: 0
   m_Name: maytrigger
   m_TagString: Untagged
@@ -4124,7 +4123,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 19.080875}
   m_Center: {x: 0, y: 0, z: -9.040438}
@@ -4143,7 +4142,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &615958426
+--- !u!114 &615958430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615958423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1094eab1ec34e4ef9a8e2b8657ddef4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: May
+    sentences:
+    - Hey Koen!
+--- !u!114 &615958431
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4159,38 +4174,9 @@ MonoBehaviour:
   nameText: {fileID: 1249976217}
   dialogueText: {fileID: 662778585}
   autoCloseInTime: 5
-  notif: {fileID: 0}
-  notiftext: {fileID: 0}
-  questinfo: {fileID: 0}
---- !u!114 &615958427
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 615958423}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca5080adfad054d42b940c47760723dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: May
-    sentences:
-    - Hey Koen!
-  Papiergeluid: {fileID: 0}
---- !u!114 &615958429
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 615958423}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 112cccff545cf4bcfb14e70f13bcda1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  notif: {fileID: 826521148}
+  notiftext: {fileID: 2091763924}
+  questinfo: {fileID: 31344632}
 --- !u!1 &641447928
 GameObject:
   m_ObjectHideFlags: 0
@@ -9268,7 +9254,6 @@ GameObject:
   - component: {fileID: 1699935361}
   - component: {fileID: 1699935368}
   - component: {fileID: 1699935370}
-  - component: {fileID: 1699935369}
   m_Layer: 0
   m_Name: Agnes
   m_TagString: Untagged
@@ -9345,8 +9330,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1699935370}
-        m_TargetAssemblyTypeName: triggermay, Assembly-CSharp
-        m_MethodName: triggeron
+        m_TargetAssemblyTypeName: Triggermay, Assembly-CSharp
+        m_MethodName: Triggeron
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9540,20 +9525,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1699935369
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1699935360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 818eb0c8dcab148cd9915c5b8513246e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggered: 0
-  boxcollider: {fileID: 0}
 --- !u!114 &1699935370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11035,7 +11006,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d5c684afb5df434bb422c082661dbe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkingSpeed: 3
+  walkingSpeed: 4
   jumpEnabled: 0
   jumpSpeed: 1
   crouchEnabled: 0

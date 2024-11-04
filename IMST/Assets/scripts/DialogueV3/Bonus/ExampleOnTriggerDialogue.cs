@@ -10,7 +10,7 @@ public class ExampleOnTriggerDialogue : MonoBehaviour
     {
         FindObjectOfType<DialogueManager>().EndDialogue();
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
-
+    Debug.Log("ddkdk");
         //hier je van alles doen... andere scene/audio/animatie etc.
     }
 }
