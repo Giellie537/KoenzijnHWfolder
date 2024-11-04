@@ -10,6 +10,7 @@ public class outside : MonoBehaviour
     public Text Questtext;
     public Text Fromtext;
     public Text Desctext;
+    
     // Start is called before the first frame update
     void Start()
     {
