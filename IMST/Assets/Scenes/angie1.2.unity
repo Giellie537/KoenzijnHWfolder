@@ -3587,7 +3587,7 @@ GameObject:
   m_Component:
   - component: {fileID: 615958425}
   - component: {fileID: 615958424}
-  - component: {fileID: 615958428}
+  - component: {fileID: 615958429}
   - component: {fileID: 615958427}
   - component: {fileID: 615958426}
   m_Layer: 0
@@ -3614,7 +3614,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 19.080875}
   m_Center: {x: 0, y: 0, z: -9.040438}
@@ -3669,7 +3669,7 @@ MonoBehaviour:
     sentences:
     - Hey Koen!
   Papiergeluid: {fileID: 0}
---- !u!114 &615958428
+--- !u!114 &615958429
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3678,26 +3678,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 615958423}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: decbc2b7e688e4c9d86f858dc1afc70a, type: 3}
+  m_Script: {fileID: 11500000, guid: 112cccff545cf4bcfb14e70f13bcda1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: 
-  cursor: {fileID: 0}
-  interactFunction:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 615958427}
-        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  tiggermay: {fileID: 615958424}
+  TriggerMay: {fileID: 1699935370}
 --- !u!1 &641447928
 GameObject:
   m_ObjectHideFlags: 0
@@ -8625,6 +8610,8 @@ GameObject:
   - component: {fileID: 1699935362}
   - component: {fileID: 1699935361}
   - component: {fileID: 1699935368}
+  - component: {fileID: 1699935370}
+  - component: {fileID: 1699935369}
   m_Layer: 0
   m_Name: Agnes
   m_TagString: Untagged
@@ -8691,6 +8678,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1699935362}
         m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
         m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1699935370}
+        m_TargetAssemblyTypeName: triggermay, Assembly-CSharp
+        m_MethodName: triggeron
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8884,6 +8883,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1699935369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699935360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 818eb0c8dcab148cd9915c5b8513246e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggered: 0
+  boxcollider: {fileID: 0}
+--- !u!114 &1699935370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699935360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 818eb0c8dcab148cd9915c5b8513246e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggered: 0
+  boxcollider: {fileID: 615958424}
 --- !u!1 &1711559638
 GameObject:
   m_ObjectHideFlags: 0

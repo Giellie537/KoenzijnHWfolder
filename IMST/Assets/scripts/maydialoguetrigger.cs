@@ -5,15 +5,14 @@ using UnityEngine;
 public class maydialoguetrigger : MonoBehaviour
 {
 
-    public triggermay tiggermay;
-    private bool trigger = true;
+    public BoxCollider tiggermay;
+    public Triggermay TriggerMay;
 
 void OnTriggerEnter(){
-if(Triggermay.triggermay == true){
+if(TriggerMay.triggered == true){
     Debug.Log("Trigger May dialogue");
-triggered = true;
-ß
-} else{
+
+}else{
     Debug.Log("nothing happens");
 
 }
