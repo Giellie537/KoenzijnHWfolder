@@ -44,7 +44,7 @@ public class Travel : MonoBehaviour
     }
 
     public void travelwoman() {
-        SceneManager.LoadScene("oldlady", LoadSceneMode.Single);
+        SceneManager.LoadScene("angie1.2", LoadSceneMode.Single);
          travelUI.SetActive(false);
         koen.SetActive(true);
         Cursor.visible = false;
@@ -81,6 +81,7 @@ public class Travel : MonoBehaviour
         crosshair.SetActive(true);
         Cursor.lockState = CursorLockMode.Locked;
         audioSource.PlayOneShot(Papiergeluid);
+        
     }
 
 }

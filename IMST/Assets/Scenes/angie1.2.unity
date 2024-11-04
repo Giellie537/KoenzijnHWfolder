@@ -11262,7 +11262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   footstepGrass: {fileID: 2075715800}
-  footstepFloor: {fileID: 2075715800}
+  footstepSnow: {fileID: 0}
 --- !u!1 &2078084854
 GameObject:
   m_ObjectHideFlags: 0
