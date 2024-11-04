@@ -5103,7 +5103,7 @@ GameObject:
   - component: {fileID: 982091927}
   - component: {fileID: 982091926}
   m_Layer: 0
-  m_Name: floor
+  m_Name: SNOW
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12646,7 +12646,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   footstepGrass: {fileID: 2016573387}
-  footstepFloor: {fileID: 2016573387}
+  footstepSnow: {fileID: 2016573387}
 --- !u!1001 &2055152236
 PrefabInstance:
   m_ObjectHideFlags: 0
