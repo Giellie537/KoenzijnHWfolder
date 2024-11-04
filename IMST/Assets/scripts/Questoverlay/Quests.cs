@@ -14,6 +14,7 @@ public class Quests : MonoBehaviour
     
     public bool extended = false;
     public bool triggered = false;
+    
 
     // Update is called once per frame
     void Update()
