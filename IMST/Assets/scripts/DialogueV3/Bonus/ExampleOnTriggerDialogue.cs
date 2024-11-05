@@ -9,7 +9,7 @@ public class ExampleOnTriggerDialogue : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         FindObjectOfType<DialogueManager2>().EndDialogue();
-        FindObjectOfType<DialogueManager2>().StartDialogue(dialogue);
+        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
     
         //hier je van alles doen... andere scene/audio/animatie etc.
     }

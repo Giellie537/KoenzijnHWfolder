@@ -10,6 +10,7 @@ public class DialogueManager2 : MonoBehaviour {
 	public TextMeshProUGUI nameText;
 	public TextMeshProUGUI dialogueText;
 
+
 	public int autoCloseInTime = 5;
 
 
@@ -18,6 +19,7 @@ public class DialogueManager2 : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		sentences = new Queue<string>();
+
 	}
 
 	public void StartDialogue (Dialogue dialogue)
@@ -67,5 +69,5 @@ public class DialogueManager2 : MonoBehaviour {
         DialogueMan.SetActive(false);
         sentences = new Queue<string>();
     }
-
+	
 }

@@ -4,11 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+
 public class DialogueManager : MonoBehaviour {
 
 	public GameObject DialogueMan;
 	public TextMeshProUGUI nameText;
 	public TextMeshProUGUI dialogueText;
+	
+	
 
 	public int autoCloseInTime = 5;
 
@@ -24,6 +27,7 @@ public class DialogueManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		sentences = new Queue<string>();
+		
 	}
 
 	public void StartDialogue (Dialogue dialogue)
@@ -86,5 +90,8 @@ public class DialogueManager : MonoBehaviour {
         yield return new WaitForSeconds(3);
         notif.SetActive(false);
      }
+	 
+	
+	
 
 }
