@@ -3621,8 +3621,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4259,7 +4259,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 19.080875}
   m_Center: {x: 0, y: 0, z: -9.040438}
@@ -4291,9 +4291,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: May
+    name: 
     sentences:
-    - Hey Koen!
+    - 'May:
+
+      Koen wait!'
 --- !u!114 &615958431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4303,16 +4305,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 615958423}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 921bf333020e54f8ba5e730f0971f2d0, type: 3}
+  m_Script: {fileID: 11500000, guid: f187db97ae867461882b559076421ddc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueMan: {fileID: 0}
-  nameText: {fileID: 0}
-  dialogueText: {fileID: 0}
+  DialogueMan: {fileID: 1768807638}
+  nameText: {fileID: 1488115062}
+  dialogueText: {fileID: 516186711}
   autoCloseInTime: 5
-  notif: {fileID: 826521148}
-  notiftext: {fileID: 2091763924}
-  questinfo: {fileID: 31344632}
 --- !u!1 &641447928
 GameObject:
   m_ObjectHideFlags: 0
@@ -4650,7 +4649,7 @@ GameObject:
   - component: {fileID: 725507233}
   - component: {fileID: 725507232}
   - component: {fileID: 725507231}
-  - component: {fileID: 725507230}
+  - component: {fileID: 725507237}
   m_Layer: 0
   m_Name: May
   m_TagString: Untagged
@@ -4658,25 +4657,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &725507230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 725507229}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 921bf333020e54f8ba5e730f0971f2d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DialogueMan: {fileID: 1768807638}
-  nameText: {fileID: 1488115062}
-  dialogueText: {fileID: 516186711}
-  autoCloseInTime: 5
-  notif: {fileID: 826521148}
-  notiftext: {fileID: 2091763924}
-  questinfo: {fileID: 31344632}
 --- !u!114 &725507231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4690,9 +4670,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: May
+    name: 
     sentences:
-    - 
+    - 'Koen:
+
+      What is it may?'
+    - 'May:
+
+      Since you''re already heading to the supermarket, could you possibly
+      get some thins for me as well?'
+    - 'Koen:
+
+      Of course! What do you need?'
+    - "May: \nI need some risotto and fish for the paella I\u2019m making for the
+      townfest tomorrow. "
+    - "Koen: \nI\u2019ll get those for you. "
+    - "May: \nThanks Koen!  "
   Papiergeluid: {fileID: 0}
 --- !u!114 &725507232
 MonoBehaviour:
@@ -4711,7 +4704,7 @@ MonoBehaviour:
   interactFunction:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 725507231}
+      - m_Target: {fileID: 725507237}
         m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
         m_MethodName: TriggerDialogue
         m_Mode: 1
@@ -4811,6 +4804,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &725507237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725507229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fccf9a035def84b339471902de3d9ac4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueMan: {fileID: 1768807638}
+  nameText: {fileID: 1488115062}
+  dialogueText: {fileID: 516186711}
+  autoCloseInTime: 5
+  questinfo: {fileID: 0}
 --- !u!1 &736212738
 GameObject:
   m_ObjectHideFlags: 0
@@ -5753,7 +5763,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -10243,12 +10253,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Angie
+    name: 
     sentences:
-    - Hello Koen, Are you here to help me with the quest I placed?
-    - Wonderfull, I need 4kg of flouwer and 3 liters of milk. Can you get that for
-      me from the store?
-    - Thank you.
+    - 'Koen:
+
+      Hi Angie!
+
+      I''m here to help with your groceries.'
+    - "Angie:\nAh Koen, I\u2019m glad that you\u2019re here! It\u2019s always so
+      nice to see you. I was going to order online again, "
+    - "Angie:\nbut I miss having people over, so I figured I\u2019d ask for help. "
+    - 'Koen:
+
+      Always a pleasure Angie! What doe you need me to pick up?'
+    - 'Angie:
+
+      I want to bake a cake for the townfest tomorrow, but i''m missing
+      som ingredients. '
+    - 'Angie:
+
+      I need some Flour and eggs.'
+    - 'Koen:
+
+      Alright! I''ll get that for your.'
+    - 'Angie:
+
+      Tanks you Koen!'
   Papiergeluid: {fileID: 8300000, guid: 4158eac354f344025b20b767a986a6fc, type: 3}
 --- !u!114 &1699935363
 MonoBehaviour:
@@ -10263,7 +10293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: 
-  cursor: {fileID: 0}
+  cursor: {fileID: 21300000, guid: e9715cc6f015ad4439b371a79b6c7562, type: 3}
   interactFunction:
     m_PersistentCalls:
       m_Calls:
@@ -12356,7 +12386,7 @@ Transform:
   m_GameObject: {fileID: 2075715788}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.18262514, z: -0, w: 0.9831826}
-  m_LocalPosition: {x: 31.57, y: 8.18, z: -0.38}
+  m_LocalPosition: {x: -10.25, y: 8.18, z: 10.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

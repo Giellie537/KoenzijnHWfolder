@@ -2997,7 +2997,9 @@ MonoBehaviour:
   dialogue:
     name: Sarah
     sentences:
-    - Can you help me Koen?
+    - 'Sarah:
+
+      Can you help me Koen?'
     - My car broke down.
     - Can you help me move it?
   Papiergeluid: {fileID: 0}

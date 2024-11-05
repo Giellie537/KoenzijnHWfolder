@@ -8,8 +8,8 @@ public class ExampleOnTriggerDialogue : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        FindObjectOfType<DialogueManager>().EndDialogue();
-        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        FindObjectOfType<DialogueManager2>().EndDialogue();
+        FindObjectOfType<DialogueManager2>().StartDialogue(dialogue);
     
         //hier je van alles doen... andere scene/audio/animatie etc.
     }
