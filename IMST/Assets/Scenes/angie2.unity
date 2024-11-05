@@ -1126,9 +1126,24 @@ MonoBehaviour:
   QuestIndicator: {fileID: 0}
   QuestDropdown: {fileID: 795573067}
   QuestExtra: {fileID: 0}
+  Community: {fileID: 0}
   Phone: {fileID: 0}
   extended: 0
   triggered: 0
+  buttonimage: {fileID: 0}
+  buttonbutton: {fileID: 0}
+  TextParent: {fileID: 0}
+  Questtext: {fileID: 0}
+  Fromtext: {fileID: 0}
+  Desctext: {fileID: 0}
+  notif: {fileID: 0}
+  notiftext: {fileID: 0}
+  added: 0
+  added2: 0
+  extended2: 0
+  addtext: {fileID: 0}
+  quest1: 0
+  quest2: 0
 --- !u!114 &132738133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2460,9 +2475,24 @@ MonoBehaviour:
   QuestIndicator: {fileID: 1967224164}
   QuestDropdown: {fileID: 795573067}
   QuestExtra: {fileID: 355687235}
+  Community: {fileID: 0}
   Phone: {fileID: 945380943}
   extended: 0
   triggered: 0
+  buttonimage: {fileID: 0}
+  buttonbutton: {fileID: 0}
+  TextParent: {fileID: 0}
+  Questtext: {fileID: 0}
+  Fromtext: {fileID: 0}
+  Desctext: {fileID: 0}
+  notif: {fileID: 0}
+  notiftext: {fileID: 0}
+  added: 0
+  added2: 0
+  extended2: 0
+  addtext: {fileID: 0}
+  quest1: 0
+  quest2: 0
 --- !u!114 &365605546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2997,9 +3027,24 @@ MonoBehaviour:
   QuestIndicator: {fileID: 0}
   QuestDropdown: {fileID: 795573067}
   QuestExtra: {fileID: 0}
+  Community: {fileID: 0}
   Phone: {fileID: 0}
   extended: 0
   triggered: 0
+  buttonimage: {fileID: 0}
+  buttonbutton: {fileID: 0}
+  TextParent: {fileID: 0}
+  Questtext: {fileID: 0}
+  Fromtext: {fileID: 0}
+  Desctext: {fileID: 0}
+  notif: {fileID: 0}
+  notiftext: {fileID: 0}
+  added: 0
+  added2: 0
+  extended2: 0
+  addtext: {fileID: 0}
+  quest1: 0
+  quest2: 0
 --- !u!114 &433119716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4704,7 +4749,7 @@ MonoBehaviour:
   interactFunction:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 725507237}
+      - m_Target: {fileID: 725507231}
         m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
         m_MethodName: TriggerDialogue
         m_Mode: 1
@@ -5589,9 +5634,24 @@ MonoBehaviour:
   QuestIndicator: {fileID: 0}
   QuestDropdown: {fileID: 795573067}
   QuestExtra: {fileID: 0}
+  Community: {fileID: 0}
   Phone: {fileID: 0}
   extended: 0
   triggered: 0
+  buttonimage: {fileID: 0}
+  buttonbutton: {fileID: 0}
+  TextParent: {fileID: 0}
+  Questtext: {fileID: 0}
+  Fromtext: {fileID: 0}
+  Desctext: {fileID: 0}
+  notif: {fileID: 0}
+  notiftext: {fileID: 0}
+  added: 0
+  added2: 0
+  extended2: 0
+  addtext: {fileID: 0}
+  quest1: 0
+  quest2: 0
 --- !u!114 &812352233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6782,9 +6842,24 @@ MonoBehaviour:
   QuestIndicator: {fileID: 0}
   QuestDropdown: {fileID: 795573067}
   QuestExtra: {fileID: 0}
+  Community: {fileID: 0}
   Phone: {fileID: 0}
   extended: 0
   triggered: 0
+  buttonimage: {fileID: 0}
+  buttonbutton: {fileID: 0}
+  TextParent: {fileID: 0}
+  Questtext: {fileID: 0}
+  Fromtext: {fileID: 0}
+  Desctext: {fileID: 0}
+  notif: {fileID: 0}
+  notiftext: {fileID: 0}
+  added: 0
+  added2: 0
+  extended2: 0
+  addtext: {fileID: 0}
+  quest1: 0
+  quest2: 0
 --- !u!114 &990665996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8421,9 +8496,24 @@ MonoBehaviour:
   QuestIndicator: {fileID: 0}
   QuestDropdown: {fileID: 795573067}
   QuestExtra: {fileID: 0}
+  Community: {fileID: 0}
   Phone: {fileID: 0}
   extended: 0
   triggered: 0
+  buttonimage: {fileID: 0}
+  buttonbutton: {fileID: 0}
+  TextParent: {fileID: 0}
+  Questtext: {fileID: 0}
+  Fromtext: {fileID: 0}
+  Desctext: {fileID: 0}
+  notif: {fileID: 0}
+  notiftext: {fileID: 0}
+  added: 0
+  added2: 0
+  extended2: 0
+  addtext: {fileID: 0}
+  quest1: 0
+  quest2: 0
 --- !u!114 &1367081843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8824,9 +8914,24 @@ MonoBehaviour:
   QuestIndicator: {fileID: 0}
   QuestDropdown: {fileID: 795573067}
   QuestExtra: {fileID: 0}
+  Community: {fileID: 0}
   Phone: {fileID: 0}
   extended: 0
   triggered: 0
+  buttonimage: {fileID: 0}
+  buttonbutton: {fileID: 0}
+  TextParent: {fileID: 0}
+  Questtext: {fileID: 0}
+  Fromtext: {fileID: 0}
+  Desctext: {fileID: 0}
+  notif: {fileID: 0}
+  notiftext: {fileID: 0}
+  added: 0
+  added2: 0
+  extended2: 0
+  addtext: {fileID: 0}
+  quest1: 0
+  quest2: 0
 --- !u!114 &1411547430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8976,9 +9081,24 @@ MonoBehaviour:
   QuestIndicator: {fileID: 0}
   QuestDropdown: {fileID: 795573067}
   QuestExtra: {fileID: 0}
+  Community: {fileID: 0}
   Phone: {fileID: 0}
   extended: 0
   triggered: 0
+  buttonimage: {fileID: 0}
+  buttonbutton: {fileID: 0}
+  TextParent: {fileID: 0}
+  Questtext: {fileID: 0}
+  Fromtext: {fileID: 0}
+  Desctext: {fileID: 0}
+  notif: {fileID: 0}
+  notiftext: {fileID: 0}
+  added: 0
+  added2: 0
+  extended2: 0
+  addtext: {fileID: 0}
+  quest1: 0
+  quest2: 0
 --- !u!114 &1418970573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9128,9 +9248,24 @@ MonoBehaviour:
   QuestIndicator: {fileID: 0}
   QuestDropdown: {fileID: 795573067}
   QuestExtra: {fileID: 0}
+  Community: {fileID: 0}
   Phone: {fileID: 0}
   extended: 0
   triggered: 0
+  buttonimage: {fileID: 0}
+  buttonbutton: {fileID: 0}
+  TextParent: {fileID: 0}
+  Questtext: {fileID: 0}
+  Fromtext: {fileID: 0}
+  Desctext: {fileID: 0}
+  notif: {fileID: 0}
+  notiftext: {fileID: 0}
+  added: 0
+  added2: 0
+  extended2: 0
+  addtext: {fileID: 0}
+  quest1: 0
+  quest2: 0
 --- !u!114 &1419332385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10722,9 +10857,24 @@ MonoBehaviour:
   QuestIndicator: {fileID: 0}
   QuestDropdown: {fileID: 795573067}
   QuestExtra: {fileID: 0}
+  Community: {fileID: 0}
   Phone: {fileID: 0}
   extended: 0
   triggered: 0
+  buttonimage: {fileID: 0}
+  buttonbutton: {fileID: 0}
+  TextParent: {fileID: 0}
+  Questtext: {fileID: 0}
+  Fromtext: {fileID: 0}
+  Desctext: {fileID: 0}
+  notif: {fileID: 0}
+  notiftext: {fileID: 0}
+  added: 0
+  added2: 0
+  extended2: 0
+  addtext: {fileID: 0}
+  quest1: 0
+  quest2: 0
 --- !u!114 &1731024163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12024,9 +12174,24 @@ MonoBehaviour:
   QuestIndicator: {fileID: 1967224164}
   QuestDropdown: {fileID: 795573067}
   QuestExtra: {fileID: 355687235}
+  Community: {fileID: 0}
   Phone: {fileID: 945380943}
   extended: 0
   triggered: 0
+  buttonimage: {fileID: 0}
+  buttonbutton: {fileID: 0}
+  TextParent: {fileID: 0}
+  Questtext: {fileID: 0}
+  Fromtext: {fileID: 0}
+  Desctext: {fileID: 0}
+  notif: {fileID: 0}
+  notiftext: {fileID: 0}
+  added: 0
+  added2: 0
+  extended2: 0
+  addtext: {fileID: 0}
+  quest1: 0
+  quest2: 0
 --- !u!114 &2044166964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12386,7 +12551,7 @@ Transform:
   m_GameObject: {fileID: 2075715788}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.18262514, z: -0, w: 0.9831826}
-  m_LocalPosition: {x: -10.25, y: 8.18, z: 10.08}
+  m_LocalPosition: {x: 25.82, y: 8.18, z: 3.56}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12437,9 +12602,24 @@ MonoBehaviour:
   QuestIndicator: {fileID: 1967224164}
   QuestDropdown: {fileID: 795573067}
   QuestExtra: {fileID: 355687235}
+  Community: {fileID: 0}
   Phone: {fileID: 945380943}
   extended: 0
   triggered: 0
+  buttonimage: {fileID: 0}
+  buttonbutton: {fileID: 0}
+  TextParent: {fileID: 0}
+  Questtext: {fileID: 0}
+  Fromtext: {fileID: 0}
+  Desctext: {fileID: 0}
+  notif: {fileID: 0}
+  notiftext: {fileID: 0}
+  added: 0
+  added2: 0
+  extended2: 0
+  addtext: {fileID: 0}
+  quest1: 0
+  quest2: 0
 --- !u!82 &2075715800
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12929,9 +13109,24 @@ MonoBehaviour:
   QuestIndicator: {fileID: 0}
   QuestDropdown: {fileID: 795573067}
   QuestExtra: {fileID: 0}
+  Community: {fileID: 0}
   Phone: {fileID: 0}
   extended: 0
   triggered: 0
+  buttonimage: {fileID: 0}
+  buttonbutton: {fileID: 0}
+  TextParent: {fileID: 0}
+  Questtext: {fileID: 0}
+  Fromtext: {fileID: 0}
+  Desctext: {fileID: 0}
+  notif: {fileID: 0}
+  notiftext: {fileID: 0}
+  added: 0
+  added2: 0
+  extended2: 0
+  addtext: {fileID: 0}
+  quest1: 0
+  quest2: 0
 --- !u!114 &2106471995
 MonoBehaviour:
   m_ObjectHideFlags: 0
