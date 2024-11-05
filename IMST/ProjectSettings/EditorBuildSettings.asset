@@ -39,12 +39,15 @@ EditorBuildSettings:
     path: Assets/Scenes/koenshuis 6.2.unity
     guid: bd46c2d48abdeec418c4dbc96119e382
   - enabled: 1
+<<<<<<< Updated upstream
     path: Assets/Scenes/angie1.2.unity
     guid: 996d2eb55cdf8c1429ecc332f4527876
   - enabled: 1
     path: Assets/Scenes/dorpsplein1.unity
     guid: 8e5dbff77d22732458687d9c396c3bad
   - enabled: 1
+=======
+>>>>>>> Stashed changes
     path: Assets/Scenes/outside4.unity
     guid: e047a6aa24f82f34ab8df481ebe85b84
   m_configObjects: {}
