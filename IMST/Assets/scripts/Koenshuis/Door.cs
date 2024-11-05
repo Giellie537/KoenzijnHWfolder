@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Door : MonoBehaviour
 {
@@ -13,14 +14,21 @@ public Questclose questclose;
 private AudioSource audioSource;
 public AudioClip Papiergeluid;
 
+public GameObject DialogueMan;
+public TextMeshProUGUI nameText;
+public TextMeshProUGUI dialogueText;
+
+public Quests questscript;
+public Quests questscript2;
+
     void Start()
     {
-         animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
     }
 
 public void klik1() {
-    if (Phone.gepakt == true && questclose.added == true){
+    if (Phone.gepakt == true && questscript.quest1 == true && questscript2.quest2 == true){
         animator.SetTrigger("dooropen");
         audioSource.PlayOneShot(Papiergeluid);
     }
@@ -28,8 +36,9 @@ public void klik1() {
      
 
      else {
-        text.text = "I cannot leave yet\nI still have to grab something";
-        text.enabled = true;
+        DialogueMan.SetActive(true);
+        nameText.text = "Koen";
+        dialogueText.text = "Maybe I should accept a quest for the community before leaving";
 
         StartCoroutine(Textweg());
      }
@@ -37,7 +46,8 @@ public void klik1() {
 
      IEnumerator Textweg() {
         yield return new WaitForSeconds(3);
-        text.enabled = false;
+        DialogueMan.SetActive(false);
+
      }
 
 
