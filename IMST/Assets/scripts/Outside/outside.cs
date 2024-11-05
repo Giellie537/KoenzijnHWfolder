@@ -7,12 +7,6 @@ using TMPro;
 public class outside : MonoBehaviour
 {
 
-    public Text text;
-    public Text Questtext;
-    public Text Fromtext;
-    public Text Desctext;
-
-
     public GameObject DialogueMan;
 	public TextMeshProUGUI nameText;
 	public TextMeshProUGUI dialogueText;
@@ -21,9 +15,7 @@ public class outside : MonoBehaviour
     void Start()
     {
         QuestsuestSystem.instance.addquest();
-        Questtext.text = "Groceries";
-        Fromtext.text = "Angie";
-        Desctext.text = "Get groceries for Angie";
+        QuestsuestSystem.instance.addquest();
 
         DialogueMan.SetActive(true);
         nameText.text = "Koen";
