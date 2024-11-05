@@ -10,6 +10,7 @@ public class Quests : MonoBehaviour
     public GameObject QuestDropdown;
     public GameObject QuestExtra;
     public GameObject Community;
+    public GameObject Questinfo;
 
     public phone Phone;
     
@@ -51,8 +52,8 @@ public class Quests : MonoBehaviour
                 triggered = false;
                 Cursor.visible = false;
                 Cursor.lockState = CursorLockMode.Locked;
-                QuestExtra.SetActive(false);
                 Community.SetActive(false);
+                Questinfo.SetActive(false);
             }
         
     }
@@ -61,6 +62,8 @@ public class Quests : MonoBehaviour
         if(extended == false){
             QuestExtra.SetActive(true);
             extended = true;
+            Community.SetActive(false);
+            Questinfo.SetActive(true);
         }
         else{
             QuestExtra.SetActive(false);
