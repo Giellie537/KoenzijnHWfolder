@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ExampleOnTriggerDialogue : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class ExampleOnTriggerDialogue : MonoBehaviour
     public AudioClip Papiergeluid;
 
     public bool collided = false;
+
 
     void Start(){
     audioSource = GetComponent<AudioSource>();      
@@ -24,9 +26,7 @@ public class ExampleOnTriggerDialogue : MonoBehaviour
         audioSource.PlayOneShot(Papiergeluid);
         collided = true;
         }
-        else{
-            Debug.Log("noghting");
-        }
+        
     
     }
 }
