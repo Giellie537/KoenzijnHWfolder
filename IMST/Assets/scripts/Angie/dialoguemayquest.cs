@@ -16,6 +16,8 @@ public class Dialoguemayquest : MonoBehaviour {
 
 	public int autoCloseInTime = 5;
 
+	private AudioSource audioSource;
+    public AudioClip Papiergeluid;
 
 	private Queue<string> sentences;
 
@@ -28,6 +30,7 @@ public class Dialoguemayquest : MonoBehaviour {
 	// Use this for initialization
 	void Start1 () {
 		sentences = new Queue<string>();
+		audioSource = GetComponent<AudioSource>();     
 	}
 
 	public void StartDialogue1 (Dialogue dialogue)
@@ -35,7 +38,7 @@ public class Dialoguemayquest : MonoBehaviour {
     
         DialogueMan.SetActive(true);
 		nameText.text = dialogue.name;
-
+		audioSource.PlayOneShot(Papiergeluid);
 		foreach (string sentence in dialogue.sentences)
 		{
 			sentences.Enqueue(sentence);

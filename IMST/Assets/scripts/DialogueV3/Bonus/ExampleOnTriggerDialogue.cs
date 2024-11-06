@@ -22,9 +22,10 @@ public class ExampleOnTriggerDialogue : MonoBehaviour
         if(collided == false){
         FindObjectOfType<DialogueManager2>().EndDialogue();
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
-
-        audioSource.PlayOneShot(Papiergeluid);
         collided = true;
+        
+        audioSource.PlayOneShot(Papiergeluid);
+        
         }
         
     

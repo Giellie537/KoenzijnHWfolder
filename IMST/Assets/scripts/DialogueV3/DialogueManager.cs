@@ -23,11 +23,12 @@ public class DialogueManager : MonoBehaviour {
     public Text notiftext;
 
 	public Text questinfo;
-
+	private AudioSource audioSource;
+    public AudioClip Papiergeluid;
 	// Use this for initialization
 	void Start () {
 		sentences = new Queue<string>();
-		
+		audioSource = GetComponent<AudioSource>();    
 	}
 
 	public void StartDialogue (Dialogue dialogue)
@@ -35,7 +36,8 @@ public class DialogueManager : MonoBehaviour {
     
         DialogueMan.SetActive(true);
 		nameText.text = dialogue.name;
-
+		audioSource.PlayOneShot(Papiergeluid);
+        
 		foreach (string sentence in dialogue.sentences)
 		{
 			sentences.Enqueue(sentence);
@@ -87,7 +89,7 @@ public class DialogueManager : MonoBehaviour {
     }
 
         IEnumerator Textweg() {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
         notif.SetActive(false);
      }
 	 

@@ -44,7 +44,7 @@ public class Travel : MonoBehaviour
     }
 
     public void travelwoman() {
-        SceneManager.LoadScene("angie1.2", LoadSceneMode.Single);
+        SceneManager.LoadScene("angie3.2", LoadSceneMode.Single);
          travelUI.SetActive(false);
         koen.SetActive(true);
         Cursor.visible = false;
@@ -64,7 +64,7 @@ public class Travel : MonoBehaviour
     }
 
     public void travelsupermarkt() {
-        SceneManager.LoadScene("supermarkt1.2", LoadSceneMode.Single);
+        SceneManager.LoadScene("supermarkt3", LoadSceneMode.Single);
          travelUI.SetActive(false);
         koen.SetActive(true);
         Cursor.visible = false;
@@ -74,7 +74,7 @@ public class Travel : MonoBehaviour
     }
 
     public void travelhome() {
-        SceneManager.LoadScene("outside", LoadSceneMode.Single);
+        SceneManager.LoadScene("outside4.1", LoadSceneMode.Single);
          travelUI.SetActive(false);
         koen.SetActive(true);
         Cursor.visible = false;
@@ -84,4 +84,14 @@ public class Travel : MonoBehaviour
         
     }
 
+    public void traveldorp() {
+        SceneManager.LoadScene("dorpsplein2.1", LoadSceneMode.Single);
+         travelUI.SetActive(false);
+        koen.SetActive(true);
+        Cursor.visible = false;
+        crosshair.SetActive(true);
+        Cursor.lockState = CursorLockMode.Locked;
+        audioSource.PlayOneShot(Papiergeluid);
+        
+    }
 }
