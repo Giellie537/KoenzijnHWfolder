@@ -36,7 +36,10 @@ public class Quests : MonoBehaviour
     //voor deur script
     public bool quest1 = false;
     public bool quest2 = false;
-    
+
+    // //firsttime
+    // public bool first = true;
+    // public Text helptext;
 
     // Update is called once per frame
     void Update()
@@ -47,6 +50,17 @@ public class Quests : MonoBehaviour
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
         }
+
+        //     else if(Input.GetKeyDown(KeyCode.Q) && triggered == false && Phone.gepakt == true && first = true){
+        //     QuestDropdown.SetActive(true);
+        //     triggered = true;
+        //     Cursor.visible = true;
+        //     Cursor.lockState = CursorLockMode.None;
+        //     helptext.enabled = true;
+        //     helptext.text = "Use Q to close quests";
+        //     first = false;
+        // }
+
         else if(Input.GetKeyDown(KeyCode.Q) && triggered == true){
                 QuestDropdown.SetActive(false);
                 triggered = false;
