@@ -16,7 +16,7 @@ public AudioClip Papiergeluid;
  audioSource = GetComponent<AudioSource>();
         
 }
-    // Start is called before the first frame update
+  // Start is called before the first frame update
   public void geluid(){
   audioSource.PlayOneShot(Papiergeluid);
   }

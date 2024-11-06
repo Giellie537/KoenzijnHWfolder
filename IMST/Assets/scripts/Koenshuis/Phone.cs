@@ -29,8 +29,13 @@ void Start(){
 
      IEnumerator Textweg() {
         yield return new WaitForSeconds(3);
-        text.enabled = false;
-        Debug.Log ("textweg");
+        text.text = "Press Q to close quest window";
+        StartCoroutine(Textweg2());
      }
+
+        IEnumerator Textweg2() {
+        yield return new WaitForSeconds(3);
+        text.enabled = false;
+        }
 
 }
