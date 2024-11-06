@@ -13,10 +13,13 @@ public class OnTrigger : MonoBehaviour
         if (other.CompareTag("car"))
         {
             SceneManager.LoadScene("", LoadSceneMode.Single);
+            
+            Debug.Log ("Trigger");
+    }
         }
 
     }
 
 
   
-}
+
