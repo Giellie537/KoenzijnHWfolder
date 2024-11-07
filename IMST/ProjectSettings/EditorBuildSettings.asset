@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/angie3.2.unity
+    path: Assets/versies/angie3.2.unity
     guid: 58a2a9d9cac8add4790e1b20e9955627
   - enabled: 1
     path: Assets/Scenes/dorpsplein2.1.unity
