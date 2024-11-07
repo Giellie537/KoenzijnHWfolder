@@ -5781,7 +5781,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DialogueMan: {fileID: 355740828}
-  nameText: {fileID: 1422161651}
+  nameText: {fileID: 0}
   dialogueText: {fileID: 1637146108}
   autoCloseInTime: 5
 --- !u!82 &615958432
@@ -6690,7 +6690,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DialogueMan: {fileID: 355740828}
-  nameText: {fileID: 1422161651}
+  nameText: {fileID: 0}
   dialogueText: {fileID: 1637146108}
   buttonimage: {fileID: 1486699886}
   buttonbutton: {fileID: 1486699885}
@@ -14402,7 +14402,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 0.21960784, g: 0.21960784, b: 0.21960784, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -14419,8 +14419,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -14914,19 +14914,23 @@ MonoBehaviour:
     sentences:
     - 'Koen:
 
-      Hi Angie!
+      Hi Angie!'
+    - 'Koen:
 
       I''m here to help with your groceries.'
     - "Angie:\nAh Koen, I\u2019m glad that you\u2019re here! It\u2019s always so
-      nice to see you. I was going to order online again, "
+      nice to see you. "
+    - "Angie:\nI was going to order online again, \n"
     - "Angie:\nbut I miss having people over, so I figured I\u2019d ask for help. "
     - 'Koen:
 
       Always a pleasure Angie! What doe you need me to pick up?'
     - 'Angie:
 
-      I want to bake a cake for the townfest tomorrow, but i''m missing
-      som ingredients. '
+      I want to bake a cake for the townfest tomorrow, '
+    - 'Angie:
+
+      but i''m missing som ingredients. '
     - 'Angie:
 
       I need some Flour and eggs.'
