@@ -5626,27 +5626,37 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
+    - "Sarah:\nThank you so much Koen!\t"
+    - "Koen: \nNo problem!"
+    - "Sarah:\nI always get worried when car show signs of trouble,\t"
+    - 'Sarah:
+
+      especially since many people aren''t familiar with them anymore.'
     - 'Koen:
 
-      Oh hi Sarah! What''s up?'
-    - 'Sarah:
-
-      Well i just delivered some fish for the supermarket.'
-    - 'Sarah:
-
-      But now my car won''t start anymore'
-    - 'Sarah:
-
-      Can you help?'
+      Yeah ever since the governmet only allowed cars as means for
+      shipment.'
     - 'Koen:
 
-      Of Course! What do you need me to do?'
+      Cars almost disappeared entirely.'
     - 'Sarah:
 
-      If you push the car fomr the bak, I''ll try to start it up. '
+      I think is was a good decicion, but I''m really glad they made
+      an exception for shipment.'
+    - 'Sarah:
+
+      Who knows what my family busness would''ve done if not?'
     - 'Koen:
 
-      Alright!'
+      So am I. I don''t think this community would habe survive without
+      the delicious fish your family provides!'
+    - 'Sarah:
+
+      Thanks! I should get moving, still have a bunch of errands to
+      run. See you tomorrow at the town feast!'
+    - 'Koen:
+
+      See you tomorrow!'
 --- !u!114 &606412824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14022,8 +14032,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
