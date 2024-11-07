@@ -7043,20 +7043,12 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - 'Koen:
-
-      What is it may?'
-    - 'May:
-
-      Since you''re already heading to the supermarket, could you possibly
-      get some thins for me as well?'
-    - 'Koen:
-
-      Of course! What do you need?'
-    - "May: \nI need some risotto and fish for the paella I\u2019m making for the
-      townfest tomorrow. "
-    - "Koen: \nI\u2019ll get those for you. "
-    - "May: \nThanks Koen!  "
+    - "Koen:\nHi May!\nHere\u2019s the stuff you needed from the supermarket!"
+    - "May:\nThanks Koen! You\u2019re the best! "
+    - "Koen:\nThis is just an excuse for me to get first dibs on that delicious paella
+      you\u2019re gonna make for tomorrow! "
+    - "May: \nAnd I respect the hustle! "
+    - "Koen: \nSee you tomorrow May!  "
 --- !u!114 &886371554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10524,194 +10516,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.02, y: 0.019999998, z: 0.019999996}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &1359470884
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1359470889}
-  - component: {fileID: 1359470888}
-  - component: {fileID: 1359470887}
-  - component: {fileID: 1359470886}
-  - component: {fileID: 1359470885}
-  m_Layer: 0
-  m_Name: maytrigger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!82 &1359470885
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1359470884}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!114 &1359470886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1359470884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f187db97ae867461882b559076421ddc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DialogueMan: {fileID: 1400979865}
-  nameText: {fileID: 1132113820}
-  dialogueText: {fileID: 1985612199}
-  autoCloseInTime: 5
---- !u!114 &1359470887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1359470884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1094eab1ec34e4ef9a8e2b8657ddef4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: 
-    sentences:
-    - 'May:
-
-      Koen wait!'
-  Papiergeluid: {fileID: 8300000, guid: b77cee43d2b5441b48bf0eb1e9fdc661, type: 3}
-  collided: 0
---- !u!65 &1359470888
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1359470884}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 19.080875}
-  m_Center: {x: 0, y: 0, z: -9.040438}
---- !u!4 &1359470889
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1359470884}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.26, y: 7.55, z: 7.89}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1360905605
 GameObject:
   m_ObjectHideFlags: 0
@@ -12507,7 +12311,6 @@ GameObject:
   - component: {fileID: 1640495960}
   - component: {fileID: 1640495959}
   - component: {fileID: 1640495958}
-  - component: {fileID: 1640495957}
   m_Layer: 0
   m_Name: Agnes
   m_TagString: Untagged
@@ -12515,20 +12318,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1640495957
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1640495956}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 818eb0c8dcab148cd9915c5b8513246e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggered: 0
-  boxcollider: {fileID: 1359470888}
 --- !u!114 &1640495958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12660,30 +12449,16 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - 'Koen:
-
-      Hi Angie!
-
-      I''m here to help with your groceries.'
-    - "Angie:\nAh Koen, I\u2019m glad that you\u2019re here! It\u2019s always so
-      nice to see you. I was going to order online again, "
-    - "Angie:\nbut I miss having people over, so I figured I\u2019d ask for help. "
-    - 'Koen:
-
-      Always a pleasure Angie! What doe you need me to pick up?'
-    - 'Angie:
-
-      I want to bake a cake for the townfest tomorrow, but i''m missing
-      som ingredients. '
-    - 'Angie:
-
-      I need some Flour and eggs.'
-    - 'Koen:
-
-      Alright! I''ll get that for your.'
-    - 'Angie:
-
-      Tanks you Koen!'
+    - "Koen: \nHey Angie! Here are the flour and eggs for the cake! "
+    - "Angie: \nYou\u2019re a lifesaver Koen! "
+    - "Koen: \nAnything for a slice of your amazing cake Angie! "
+    - "Angie: \nOh stop it, you\u2019re just saying that. "
+    - "Koen: \nOf course not! You\u2019re such a good baker! "
+    - "Angie: \nYou know what Koen? You\u2019re a good kid. "
+    - "Koen: \nThanks Angie. "
+    - "Angie: \nNow go home and get some sleep! You must be tired after helping people
+      all day. I\u2019ll see you tomorrow at the fest. "
+    - "Koen: \nSee you tomorrow Angie!      "
 --- !u!114 &1640495961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12713,7 +12488,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1640495957}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Triggermay, Assembly-CSharp
         m_MethodName: Triggeron
         m_Mode: 1
@@ -15357,8 +15132,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -17278,7 +17053,6 @@ SceneRoots:
   - {fileID: 1029205060}
   - {fileID: 391223914}
   - {fileID: 886371558}
-  - {fileID: 1359470889}
   - {fileID: 1914373915}
   - {fileID: 240496257}
   - {fileID: 146645349}
