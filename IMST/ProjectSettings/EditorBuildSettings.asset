@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/supermaketnaauto.unity
     guid: 6b272fe90e62e4041bce653f5dcbbff3
+  - enabled: 1
+    path: Assets/Scenes/backhome.unity
+    guid: 6ad6522b5e2af40d0af0ec09fcfdfa7a
   m_configObjects: {}
