@@ -18,8 +18,7 @@ public class outside : MonoBehaviour
         QuestsuestSystem.instance.addquest();
 
         DialogueMan.SetActive(true);
-        nameText.text = "Koen";
-        dialogueText.text = "Angie lives at Sterrenlaan. I should take the bus there.";
+        dialogueText.text = "Koen:\nAngie lives at Sterrenlaan. I should take the bus there.";
         StartCoroutine(Textweg());
     }
 
