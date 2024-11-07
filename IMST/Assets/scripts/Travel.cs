@@ -74,7 +74,7 @@ public class Travel : MonoBehaviour
     }
 
     public void travelhome() {
-        SceneManager.LoadScene("outside4.1", LoadSceneMode.Single);
+        SceneManager.LoadScene("backhome", LoadSceneMode.Single);
          travelUI.SetActive(false);
         koen.SetActive(true);
         Cursor.visible = false;
