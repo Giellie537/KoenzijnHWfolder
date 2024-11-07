@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class switchsceneshomeoutside : MonoBehaviour
 {
     void OnTriggerEnter() {
-        SceneManager.LoadScene("supermaketnaauto", LoadSceneMode.Single);
+        SceneManager.LoadScene("outside4.1", LoadSceneMode.Single);
         Debug.Log ("Trigger");
     }
 
