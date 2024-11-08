@@ -21,22 +21,22 @@ public class Timdia : MonoBehaviour {
 
 	private Queue<string> sentences;
 
-	//reference notification
-	// public GameObject notif;
-    // public Text notiftext;
+	// reference notification
+	public GameObject notif;
+    public Text notiftext;
 
 	public Text questinfo;
 private int count; 
 	// Use this for initialization
 	void Start1 () {
-		// sentences = new Queue<string>();
+		sentences = new Queue<string>();
 		audioSource = GetComponent<AudioSource>();    
 		 count = 0;
 	}
 
 	public void StartDialogue1 (Dialogue dialogue)
 	{
-    if(count <= 6)
+    if(count <= 10)
 		{
         DialogueMan.SetActive(true);
 		nameText.text = dialogue.name;
@@ -79,33 +79,33 @@ private int count;
 			yield return null;
 		}
 
-		// //sluit messagebox na X seconden.
+		//sluit messagebox na X seconden.
 		// yield return new WaitForSeconds(autoCloseInTime);
         // EndDialogue1();
     }
 
 	public void EndDialogue()
 	{
-        // DialogueMan.SetActive(false);
-        // sentences = new Queue<string>();
-		// Debug.Log("end");
+        DialogueMan.SetActive(false);
+        sentences = new Queue<string>();
+		Debug.Log("end");
 
-        // //notification
-        // notif.SetActive(true);
-        // notiftext.text = "Quest details added";
+        //notification
+        notif.SetActive(true);
+        notiftext.text = "Quest details added";
 
-        // buttonimage.enabled = true;
-        // buttonbutton.enabled = true;
-        // TextParent.SetActive(true);
-        // QuestsuestSystem.instance.addquest();
+        buttonimage.enabled = true;
+        buttonbutton.enabled = true;
+        TextParent.SetActive(true);
+        QuestsuestSystem.instance.addquest();
 
-        // StartCoroutine(Textweg3());
+        StartCoroutine(Textweg3());
 
     }
 
         IEnumerator Textweg3() {
         yield return new WaitForSeconds(3);
-        // notif.SetActive(false);
+        notif.SetActive(false);
      }
 
 }
