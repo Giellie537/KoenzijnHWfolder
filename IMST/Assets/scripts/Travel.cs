@@ -44,7 +44,7 @@ public class Travel : MonoBehaviour
     }
 
     public void travelwoman() {
-        SceneManager.LoadScene("angie3.2", LoadSceneMode.Single);
+        SceneManager.LoadScene("angie4.1", LoadSceneMode.Single);
          travelUI.SetActive(false);
         koen.SetActive(true);
         Cursor.visible = false;
@@ -64,7 +64,7 @@ public class Travel : MonoBehaviour
     }
 
     public void travelsupermarkt() {
-        SceneManager.LoadScene("supermarkt3", LoadSceneMode.Single);
+        SceneManager.LoadScene("supermarkt5.3", LoadSceneMode.Single);
          travelUI.SetActive(false);
         koen.SetActive(true);
         Cursor.visible = false;
@@ -85,7 +85,7 @@ public class Travel : MonoBehaviour
     }
 
     public void traveldorp() {
-        SceneManager.LoadScene("dorpsplein2.1", LoadSceneMode.Single);
+        SceneManager.LoadScene("dorpsplein3", LoadSceneMode.Single);
          travelUI.SetActive(false);
         koen.SetActive(true);
         Cursor.visible = false;
