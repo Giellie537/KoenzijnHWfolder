@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:IMST/Assets/Textures/borden/Materials/Screenshot 2024-11-08 141512.mat.meta
 guid: e8552648e151a12499594e751a7bb5bf
 NativeFormatImporter:
+========
+guid: 11a5c02a4f2d6c247ac106e18816a4cc
+DefaultImporter:
+>>>>>>>> 55c70d8a1b3f1d3063e00719329488ca46c3f667:IMST/Assets/supermarktauto1.unity.meta
   externalObjects: {}
   mainObjectFileID: 2100000
   userData: 

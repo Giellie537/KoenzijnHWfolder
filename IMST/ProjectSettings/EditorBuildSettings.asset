@@ -57,7 +57,7 @@ EditorBuildSettings:
     path: Assets/Scenes/angiesreturn.unity
     guid: 80088180965924b0aae45a336809ca4a
   - enabled: 1
-    path: Assets/Scenes/angie4.1.unity
+    path: Assets/versies/angie4.1.unity
     guid: df7d49d3ca965104ba2bc8e0ed0ed572
   - enabled: 1
     path: Assets/versies/angie4 - Copy.unity
