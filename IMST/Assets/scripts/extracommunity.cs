@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class newcommunityqest : MonoBehaviour
+public class extracommunity : MonoBehaviour
 {
     
     public bool collided = false;
@@ -11,15 +11,14 @@ public class newcommunityqest : MonoBehaviour
     public GameObject notif;
     public Text notiftext;
 
-    public GameObject desc;
-    public Triggermay TriggerMay;
+    public GameObject roof;
 
 void OnTriggerEnter(){
-    if(!collided && TriggerMay.triggered == true){
+    if(!collided){
                 //notification
             notif.SetActive(true);
             notiftext.text = "New community quest";
-            desc.SetActive(true);
+            roof.SetActive(true);
             StartCoroutine(Textweg());
             collided = true;
     }
