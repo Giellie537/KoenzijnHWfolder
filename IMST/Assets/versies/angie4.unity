@@ -1481,13 +1481,13 @@ MonoBehaviour:
     - "Angie:\nbut I miss having people over, so I figured I\u2019d ask for help. "
     - 'Koen:
 
-      Always a pleasure Angie! What do you need me to pick up?'
+      Always a pleasure Angie! What doe you need me to pick up?'
     - 'Angie:
 
       I want to bake a cake for the townfest tomorrow, '
     - 'Angie:
 
-      but i''m missing some ingredients. '
+      but i''m missing som ingredients. '
     - 'Angie:
 
       I need some Flour and eggs.'
@@ -1575,7 +1575,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggered: 0
   boxcollider: {fileID: 615958424}
-  sarahcar: {fileID: 0}
 --- !u!1 &127604081
 GameObject:
   m_ObjectHideFlags: 0
@@ -11954,7 +11953,7 @@ MonoBehaviour:
     - 'May:
 
       Since you''re already heading to the supermarket, could you possibly
-      get some things for me as well?'
+      get some thins for me as well?'
     - 'Koen:
 
       Of course! What do you need?'
