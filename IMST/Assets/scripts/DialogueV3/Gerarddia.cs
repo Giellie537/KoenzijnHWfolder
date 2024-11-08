@@ -36,7 +36,7 @@ private int count;
 
 	public void StartDialogue1 (Dialogue dialogue)
 	{
-    if(count <= 10)
+    if(count <= 11)
 		{
         DialogueMan.SetActive(true);
 		nameText.text = dialogue.name;
