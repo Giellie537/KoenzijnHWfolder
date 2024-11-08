@@ -14,7 +14,7 @@ public class Dialoguemayquest : MonoBehaviour {
     public Button buttonbutton;
     public GameObject TextParent;
 
-	public int autoCloseInTime = 5;
+	public int autoCloseInTime = 0;
 
 	private AudioSource audioSource;
     public AudioClip Papiergeluid;
@@ -26,25 +26,34 @@ public class Dialoguemayquest : MonoBehaviour {
     public Text notiftext;
 
 	public Text questinfo;
-
+private int count; 
 	// Use this for initialization
 	void Start1 () {
 		sentences = new Queue<string>();
-		audioSource = GetComponent<AudioSource>();     
+		audioSource = GetComponent<AudioSource>();    
+		 count = 0;
 	}
 
 	public void StartDialogue1 (Dialogue dialogue)
 	{
-    
+    if(count <= 13)
+		{
         DialogueMan.SetActive(true);
 		nameText.text = dialogue.name;
 		audioSource.PlayOneShot(Papiergeluid);
+
 		foreach (string sentence in dialogue.sentences)
 		{
 			sentences.Enqueue(sentence);
 		}
 
+		count++;
 		DisplayNextSentence1();
+		} else{
+			EndDialogue();
+			count = 0;
+			return;
+		}
 	}
 
 	public void DisplayNextSentence1 ()
@@ -52,7 +61,7 @@ public class Dialoguemayquest : MonoBehaviour {
 		
 		if (sentences.Count == 0)
 		{
-			EndDialogue1();
+			EndDialogue();
 			return;
 		}
 
@@ -70,12 +79,12 @@ public class Dialoguemayquest : MonoBehaviour {
 			yield return null;
 		}
 
-		//sluit messagebox na X seconden.
-		yield return new WaitForSeconds(autoCloseInTime);
-        EndDialogue1();
+		// //sluit messagebox na X seconden.
+		// yield return new WaitForSeconds(autoCloseInTime);
+        // EndDialogue1();
     }
 
-	public void EndDialogue1()
+	public void EndDialogue()
 	{
         DialogueMan.SetActive(false);
         sentences = new Queue<string>();

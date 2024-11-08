@@ -53,15 +53,6 @@ public class Travel : MonoBehaviour
         audioSource.PlayOneShot(Papiergeluid);
     }
 
-    public void travelmain() {
-        SceneManager.LoadScene("main", LoadSceneMode.Single);
-         travelUI.SetActive(false);
-        koen.SetActive(true);
-        Cursor.visible = false;
-        crosshair.SetActive(true);
-        Cursor.lockState = CursorLockMode.Locked;
-        audioSource.PlayOneShot(Papiergeluid);
-    }
 
     public void travelsupermarkt() {
         SceneManager.LoadScene("supermarkt5.3", LoadSceneMode.Single);
@@ -86,6 +77,17 @@ public class Travel : MonoBehaviour
 
     public void traveldorp() {
         SceneManager.LoadScene("dorpsplein3", LoadSceneMode.Single);
+         travelUI.SetActive(false);
+        koen.SetActive(true);
+        Cursor.visible = false;
+        crosshair.SetActive(true);
+        Cursor.lockState = CursorLockMode.Locked;
+        audioSource.PlayOneShot(Papiergeluid);
+        
+    }
+
+        public void travelangiereturn() {
+        SceneManager.LoadScene("angiesreturn", LoadSceneMode.Single);
          travelUI.SetActive(false);
         koen.SetActive(true);
         Cursor.visible = false;
