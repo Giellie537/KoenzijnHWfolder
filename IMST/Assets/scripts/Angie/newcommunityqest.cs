@@ -12,9 +12,10 @@ public class newcommunityqest : MonoBehaviour
     public Text notiftext;
 
     public GameObject roof;
+    public Triggermay TriggerMay;
 
 void OnTriggerEnter(){
-    if(!collided){
+    if(!collided && TriggerMay.triggered == true){
                 //notification
             notif.SetActive(true);
             notiftext.text = "New community quest";
@@ -22,7 +23,10 @@ void OnTriggerEnter(){
             StartCoroutine(Textweg());
             collided = true;
     }
+    
     }
+
+
 
                     IEnumerator Textweg() {
                     yield return new WaitForSeconds(3);
