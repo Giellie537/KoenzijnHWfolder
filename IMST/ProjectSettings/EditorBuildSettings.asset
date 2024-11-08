@@ -39,7 +39,7 @@ EditorBuildSettings:
     path: Assets/Scenes/outside4.3.unity
     guid: 6fc19630a9645d14e97b5162081d2f61
   - enabled: 1
-    path: Assets/Scenes/koenshuis10.1.unity
+    path: Assets/versies/koenshuis10.1.unity
     guid: 7b9db78b40167ea40a6b69c50cec5cbf
   - enabled: 1
     path: Assets/Scenes/supermarkt5.3.unity

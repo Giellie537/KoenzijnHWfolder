@@ -10,13 +10,16 @@ public AudioClip Papiergeluid;
 public GameObject Questoverlay;
 public Text text;
 public bool gepakt = false;
-public MeshRenderer meshrenderer;
+// public MeshRenderer meshrenderer;
+
+public GameObject watch;
 
 void Start(){
      AudioSource = GetComponent<AudioSource>();
 }
     public void oppakken() {
-        meshrenderer.enabled = false;
+        // meshrenderer.enabled = false;
+        watch.SetActive(false);
         gepakt = true;
 
         text.text = "Press Q to view quests";
