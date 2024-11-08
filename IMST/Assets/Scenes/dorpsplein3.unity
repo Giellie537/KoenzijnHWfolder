@@ -6174,6 +6174,86 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &446997571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446997569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca5080adfad054d42b940c47760723dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - 'Koen:
+
+      Hey Gerard!'
+    - "Gerard: \nHello Koen. "
+    - "Koen: \nIs.. everything alright? "
+    - 'Gerard:
+
+      While I can say that I am alright, I cannot say the same for
+      some fellows of the community. They seem to be quite upset with you.'
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+--- !u!114 &446997572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446997569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5a930d9e7de94aebbf817d38b93c000, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueMan: {fileID: 337075025}
+  nameText: {fileID: 0}
+  dialogueText: {fileID: 125412734}
+  buttonimage: {fileID: 0}
+  buttonbutton: {fileID: 0}
+  TextParent: {fileID: 0}
+  autoCloseInTime: 0
+  Papiergeluid: {fileID: 0}
+  questinfo: {fileID: 0}
+--- !u!114 &446997573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446997569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: decbc2b7e688e4c9d86f858dc1afc70a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: 
+  cursor: {fileID: 21300000, guid: e9715cc6f015ad4439b371a79b6c7562, type: 3}
+  interactFunction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 446997571}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &452531471 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 10e95a6bce98047479e28725662417fe, type: 3}
@@ -16471,6 +16551,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: db5b848b0c7232b4f907d11a8362dc28, type: 3}
       insertIndex: -1
       addedObject: {fileID: 446997570}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: db5b848b0c7232b4f907d11a8362dc28, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 446997573}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: db5b848b0c7232b4f907d11a8362dc28, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 446997572}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: db5b848b0c7232b4f907d11a8362dc28, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 446997571}
   m_SourcePrefab: {fileID: 100100000, guid: db5b848b0c7232b4f907d11a8362dc28, type: 3}
 --- !u!1 &1237104928
 GameObject:
@@ -28533,7 +28622,7 @@ MonoBehaviour:
   Questoverlay: {fileID: 0}
   text: {fileID: 0}
   gepakt: 1
-  meshrenderer: {fileID: 1802286103}
+  watch: {fileID: 0}
 --- !u!114 &1802286101
 MonoBehaviour:
   m_ObjectHideFlags: 0
