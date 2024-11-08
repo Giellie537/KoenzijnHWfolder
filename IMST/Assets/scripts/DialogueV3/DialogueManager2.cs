@@ -11,20 +11,22 @@ public class DialogueManager2 : MonoBehaviour {
 	public TextMeshProUGUI dialogueText;
 
 
-	public int autoCloseInTime = 5;
+	public int autoCloseInTime = 0;
 
 
 	private Queue<string> sentences;
 
+	private int count; 
 	// Use this for initialization
 	void Start () {
 		sentences = new Queue<string>();
-
+		count = 0;
 	}
 
-	public void StartDialogue (Dialogue dialogue)
+	public void StartDialogue2 (Dialogue dialogue)
 	{
-    
+		if(count <= 12)
+		{
         DialogueMan.SetActive(true);
 		nameText.text = dialogue.name;
 
@@ -32,8 +34,13 @@ public class DialogueManager2 : MonoBehaviour {
 		{
 			sentences.Enqueue(sentence);
 		}
-
+		count++;
 		DisplayNextSentence();
+		}else{
+			EndDialogue();
+			count = 0;
+			return;
+		}
 	}
 
 	public void DisplayNextSentence ()

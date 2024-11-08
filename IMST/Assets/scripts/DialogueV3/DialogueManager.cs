@@ -36,7 +36,7 @@ public class DialogueManager : MonoBehaviour {
 
 	public void StartDialogue (Dialogue dialogue)
 	{
-		if(count < 11)
+		if(count <= 10)
 		{
 		DialogueMan.SetActive(true);
 		nameText.text = dialogue.name;
@@ -50,7 +50,10 @@ public class DialogueManager : MonoBehaviour {
 		DisplayNextSentence();
 		} else{
 			EndDialogue();
+			count = 0;
 			return;
+			
+			
 		}
 	}
 

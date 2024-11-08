@@ -1575,7 +1575,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggered: 0
   boxcollider: {fileID: 615958424}
-  sarahcar: {fileID: 0}
+  sarahcar: {fileID: 615958423}
 --- !u!1 &127604081
 GameObject:
   m_ObjectHideFlags: 0
