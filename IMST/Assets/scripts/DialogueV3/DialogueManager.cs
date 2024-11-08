@@ -13,7 +13,7 @@ public class DialogueManager : MonoBehaviour {
 	
 	
 
-	public int autoCloseInTime = 5;
+	public int autoCloseInTime = 0;
 
 
 	private Queue<string> sentences;
@@ -25,16 +25,20 @@ public class DialogueManager : MonoBehaviour {
 	public Text questinfo;
 	private AudioSource audioSource;
     public AudioClip Papiergeluid;
+
+	private int count; 
 	// Use this for initialization
 	void Start () {
 		sentences = new Queue<string>();
-		audioSource = GetComponent<AudioSource>();    
+		audioSource = GetComponent<AudioSource>();
+		count = 0;
 	}
 
 	public void StartDialogue (Dialogue dialogue)
 	{
-    
-        DialogueMan.SetActive(true);
+		if(count < 11)
+		{
+		DialogueMan.SetActive(true);
 		nameText.text = dialogue.name;
 		audioSource.PlayOneShot(Papiergeluid);
         
@@ -42,8 +46,12 @@ public class DialogueManager : MonoBehaviour {
 		{
 			sentences.Enqueue(sentence);
 		}
-
+		count++;
 		DisplayNextSentence();
+		} else{
+			EndDialogue();
+			return;
+		}
 	}
 
 	public void DisplayNextSentence ()
@@ -70,16 +78,16 @@ public class DialogueManager : MonoBehaviour {
 		}
 
 		//sluit messagebox na X seconden.
-		yield return new WaitForSeconds(autoCloseInTime);
-        EndDialogue();
+		//yield return new WaitForSeconds(autoCloseInTime);
+        //EndDialogue();
     }
 
 	public void EndDialogue()
 	{
         DialogueMan.SetActive(false);
         sentences = new Queue<string>();
-		Debug.Log("end");
 
+		Debug.Log(count);
         //notification
         notif.SetActive(true);
         notiftext.text = "Quest details added";
