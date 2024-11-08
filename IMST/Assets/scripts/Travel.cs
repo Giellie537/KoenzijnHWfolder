@@ -85,4 +85,15 @@ public class Travel : MonoBehaviour
         audioSource.PlayOneShot(Papiergeluid);
         
     }
+
+        public void travelangiereturn() {
+        SceneManager.LoadScene("angiesreturn", LoadSceneMode.Single);
+         travelUI.SetActive(false);
+        koen.SetActive(true);
+        Cursor.visible = false;
+        crosshair.SetActive(true);
+        Cursor.lockState = CursorLockMode.Locked;
+        audioSource.PlayOneShot(Papiergeluid);
+        
+    }
 }
