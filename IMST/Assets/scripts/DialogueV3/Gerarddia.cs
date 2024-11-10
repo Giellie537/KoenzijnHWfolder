@@ -4,55 +4,54 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+
 public class Gerarddia : MonoBehaviour {
 
 	public GameObject DialogueMan;
 	public TextMeshProUGUI nameText;
 	public TextMeshProUGUI dialogueText;
+	
+	public int autoCloseInTime = 10;
 
-    public Image buttonimage;
-    public Button buttonbutton;
-    public GameObject TextParent;
-
-	public int autoCloseInTime = 0;
-
-	private AudioSource audioSource;
-    public AudioClip Papiergeluid;
 
 	private Queue<string> sentences;
 
-	// reference notification
-	// public GameObject notif;
-    // public Text notiftext;
+	//reference notification
+	public GameObject notif;
+    public Text notiftext;
 
-	// public Text questinfo;
-private int count; 
+	public Text questinfo;
+	private AudioSource audioSource;
+    public AudioClip Papiergeluid;
+
+	private int count; 
 	// Use this for initialization
 	void Start () {
 		sentences = new Queue<string>();
-		audioSource = GetComponent<AudioSource>();    
-		 count = 0;
+		audioSource = GetComponent<AudioSource>();
+		count = 0;
 	}
 
 	public void StartDialogue (Dialogue dialogue)
 	{
-    if(count <= 11)
+		if(count <= 10)
 		{
-        DialogueMan.SetActive(true);
+		DialogueMan.SetActive(true);
 		nameText.text = dialogue.name;
 		audioSource.PlayOneShot(Papiergeluid);
-
+        
 		foreach (string sentence in dialogue.sentences)
 		{
 			sentences.Enqueue(sentence);
 		}
-
 		count++;
 		DisplayNextSentence();
 		} else{
 			EndDialogue();
 			count = 0;
 			return;
+			
+			
 		}
 	}
 
@@ -79,33 +78,31 @@ private int count;
 			yield return null;
 		}
 
-		// sluit messagebox na X seconden.
-		yield return new WaitForSeconds(autoCloseInTime);
-        EndDialogue();
+		//sluit messagebox na X seconden.
+		// yield return new WaitForSeconds(autoCloseInTime);
+        // EndDialogue();
     }
 
 	public void EndDialogue()
 	{
         DialogueMan.SetActive(false);
         sentences = new Queue<string>();
-		Debug.Log("end");
 
+		Debug.Log(count);
         //notification
-        // notif.SetActive(true);
-        // notiftext.text = "Quest details added";
-
-        // buttonimage.enabled = true;
-        // buttonbutton.enabled = true;
-        // TextParent.SetActive(true);
-        // QuestsuestSystem.instance.addquest();
-
-        // StartCoroutine(Textweg3());
+        notif.SetActive(true);
+        notiftext.text = "Quest details added";
+		questinfo.text = "4kg flour\n3 L milk";
+        StartCoroutine(Textweg());
 
     }
 
-        IEnumerator Textweg3() {
-        yield return new WaitForSeconds(3);
-        // notif.SetActive(false);
+        IEnumerator Textweg() {
+        yield return new WaitForSeconds(5);
+        notif.SetActive(false);
      }
+	 
+	
+	
 
 }

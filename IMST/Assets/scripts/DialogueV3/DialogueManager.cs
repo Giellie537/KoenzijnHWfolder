@@ -11,7 +11,7 @@ public class DialogueManager : MonoBehaviour {
 	public TextMeshProUGUI nameText;
 	public TextMeshProUGUI dialogueText;
 	
-	public int autoCloseInTime = 4;
+	public int autoCloseInTime = 10;
 
 
 	private Queue<string> sentences;
@@ -79,8 +79,8 @@ public class DialogueManager : MonoBehaviour {
 		}
 
 		//sluit messagebox na X seconden.
-		yield return new WaitForSeconds(autoCloseInTime);
-        EndDialogue();
+		// yield return new WaitForSeconds(autoCloseInTime);
+        // EndDialogue();
     }
 
 	public void EndDialogue()
@@ -98,7 +98,7 @@ public class DialogueManager : MonoBehaviour {
     }
 
         IEnumerator Textweg() {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(5);
         notif.SetActive(false);
      }
 	 
