@@ -4486,8 +4486,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggered: 0
-  boxcollider: {fileID: 1054533434}
-  sarahcar: {fileID: 1054533433}
+  boxcollider: {fileID: 0}
+  sarahcar: {fileID: 0}
 --- !u!95 &416972893
 Animator:
   serializedVersion: 5
@@ -4640,34 +4640,37 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - 'Koen:
+    - '(1/9)Koen:
 
-      Hi Angie!'
-    - 'Koen:
+      Hey Angie! Here''s the flour and eggs for the cake!'
+    - '(2/9)Angie:
 
-      I''m here to help with your groceries.'
-    - "Angie:\nAh Koen, I\u2019m glad that you\u2019re here! It\u2019s always so
-      nice to see you. "
-    - "Angie:\nI was going to order online again, \n"
-    - "Angie:\nbut I miss having people over, so I figured I\u2019d ask for help. "
-    - 'Koen:
+      You''re a lifesaver Koen!'
+    - '(2/9)Koen:
 
-      Always a pleasure Angie! What doe you need me to pick up?'
-    - 'Angie:
+      Anything for a slice of your amazing cake Angie!'
+    - '(3/9)Angie:
 
-      I want to bake a cake for the townfest tomorrow, '
-    - 'Angie:
+      Oh stop it, you''re just saying that.'
+    - '(4/9)Koen:
 
-      but i''m missing som ingredients. '
-    - 'Angie:
+      Of course not! You''re such a good baker!'
+    - '(5/9)Angie:
 
-      I need some Flour and eggs.'
-    - 'Koen:
+      You know what Koen? You''re a good kid.'
+    - '(6/9)Koen:
 
-      Alright! I''ll get that for your.'
-    - 'Angie:
+      Thanks Angie.'
+    - '(7/9)Angie:
 
-      Tanks you Koen!'
+      Now go home and get some sleep! You must be tired after
+      helping people all day.'
+    - '(8/9)ANgie:
+
+      I''ll see you tomorrow at the fest!'
+    - '(9/9)Koen:
+
+      See you tomorrow Angie!'
 --- !u!114 &416972897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8392,7 +8395,8 @@ MonoBehaviour:
   collided: 0
   notif: {fileID: 584452212}
   notiftext: {fileID: 1127004734}
-  roof: {fileID: 380559029}
+  desc: {fileID: 0}
+  TriggerMay: {fileID: 0}
 --- !u!65 &760322776
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12967,194 +12971,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 294b9be7857d51c4ba8233f643eaf0b8, type: 3}
---- !u!1 &1054533433
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1054533438}
-  - component: {fileID: 1054533434}
-  - component: {fileID: 1054533437}
-  - component: {fileID: 1054533436}
-  - component: {fileID: 1054533435}
-  m_Layer: 0
-  m_Name: maytrigger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!65 &1054533434
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1054533433}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 19.080875}
-  m_Center: {x: 0, y: 0, z: -9.040438}
---- !u!82 &1054533435
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1054533433}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!114 &1054533436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1054533433}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f187db97ae867461882b559076421ddc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DialogueMan: {fileID: 278165038}
-  nameText: {fileID: 0}
-  dialogueText: {fileID: 896880605}
-  autoCloseInTime: 5
---- !u!114 &1054533437
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1054533433}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1094eab1ec34e4ef9a8e2b8657ddef4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: 
-    sentences:
-    - 'May:
-
-      Koen wait!'
-  Papiergeluid: {fileID: 8300000, guid: b77cee43d2b5441b48bf0eb1e9fdc661, type: 3}
-  collided: 0
---- !u!4 &1054533438
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1054533433}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.26, y: 7.55, z: 7.89}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1059620660
 GameObject:
   m_ObjectHideFlags: 0
@@ -25604,20 +25420,22 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - 'Koen:
+    - '(1/5)Koen:
 
-      What is it may?'
-    - 'May:
+      Hi May! Here''s the stuff you needed from the supermarket!'
+    - '(2/5)May:
 
-      Since you''re already heading to the supermarket, could you possibly
-      get some thins for me as well?'
-    - 'Koen:
+      Thanks Koen! You''re the best!'
+    - '(3/5)Koen:
 
-      Of course! What do you need?'
-    - "May: \nI need some risotto and fish for the paella I\u2019m making for the
-      townfest tomorrow. "
-    - "Koen: \nI\u2019ll get those for you. "
-    - "May: \nThanks Koen!  "
+      This is just an excuse for me to get first dibs on that
+      delicious paella you''re gonna make for tomorrow!'
+    - '(4/5)May:
+
+      ANd I respect the hustle!'
+    - '(5/5)Koen:
+
+      See you tomorrow May!'
 --- !u!114 &2011564147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26940,7 +26758,6 @@ SceneRoots:
   - {fileID: 806182530}
   - {fileID: 1943421957}
   - {fileID: 489810810}
-  - {fileID: 1054533438}
   - {fileID: 532382820}
   - {fileID: 1608920550}
   - {fileID: 873659207}

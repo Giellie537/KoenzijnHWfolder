@@ -11713,35 +11713,36 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - "Sarah:\nThank you so much Koen!\t"
-    - "Koen: \nNo problem!"
-    - "Sarah:\nI always get worried when my car show signs of trouble,\t"
-    - 'Sarah:
+    - "(1/11)Sarah:\nThank you so much Koen!\t"
+    - "(2/11)Koen: \nNo problem!"
+    - "(3/11)Sarah:\nI always get worried when my car show signs of trouble,\t"
+    - '(4/11)Sarah:
 
-      especially since many people aren''t familiar with them anymore.'
-    - 'Koen:
+      especially since many people aren''t familiar with them
+      anymore.'
+    - '(5/11)Koen:
 
-      Yeah ever since the governmet only allowed cars as means for
-      shipment'
-    - 'Koen:
+      Yeah ever since the governmet only allowed cars as means
+      for shipment'
+    - '(6/11)Koen:
 
       cars almost disappeared entirely.'
-    - 'Sarah:
+    - '(7/11)Sarah:
 
-      I think is was a good decicion, but I''m really glad they made
-      an exception for shipment.'
-    - 'Sarah:
+      I think is was a good decicion, but I''m really glad they
+      made an exception for shipment.'
+    - '(8/11)Sarah:
 
       Who knows what my family business would''ve done if not?'
-    - 'Koen:
+    - '(9/11)Koen:
 
-      So am I. I don''t think this community would have survived without
-      the delicious fish your family provides!'
-    - 'Sarah:
+      So am I. I don''t think this community would have survived
+      without the delicious fish your family provides!'
+    - '(10/11)Sarah:
 
-      Thanks! I should get moving, still have a bunch of errands to
-      run. See you tomorrow at the town feast!'
-    - 'Koen:
+      Thanks! I should get moving, still have a bunch of errands
+      to run. See you tomorrow at the town feast!'
+    - '(11/11)Koen:
 
       See you tomorrow!'
 --- !u!114 &606412824

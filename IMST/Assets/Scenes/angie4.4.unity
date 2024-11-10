@@ -1844,34 +1844,35 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - 'Koen:
+    - '(1/11)Koen:
 
       Hi Angie!'
-    - 'Koen:
+    - '(2/11)Koen:
 
       I''m here to help with your groceries.'
-    - "Angie:\nAh Koen, I\u2019m glad that you\u2019re here! It\u2019s always so
-      nice to see you. "
-    - "Angie:\nI was going to order online again, \n"
-    - "Angie:\nbut I miss having people over, so I figured I\u2019d ask for help. "
-    - 'Koen:
+    - "(3/11)Angie:\nAh Koen, I\u2019m glad that you\u2019re here! It\u2019s always
+      so nice to see you. "
+    - "(4/11)Angie:\nI was going to order online again, \n"
+    - "(5/11)Angie:\nbut I miss having people over, so I figured I\u2019d ask for
+      help. "
+    - '(6/11)Koen:
 
       Always a pleasure Angie! What doe you need me to pick up?'
-    - 'Angie:
+    - '(7/11)Angie:
 
       I want to bake a cake for the townfest tomorrow, '
-    - 'Angie:
+    - '(8/11)Angie:
 
-      but i''m missing som ingredients. '
-    - 'Angie:
+      but i''m missing some ingredients. '
+    - '(9/11)Angie:
 
       I need some Flour and eggs.'
-    - 'Koen:
+    - '(10/11)Koen:
 
       Alright! I''ll get that for your.'
-    - 'Angie:
+    - '(11/11)Angie:
 
-      Tanks you Koen!'
+      Thank you Koen!'
 --- !u!114 &125497264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7312,7 +7313,7 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - 'May:
+    - '(1/7)May:
 
       Koen wait!'
   Papiergeluid: {fileID: 8300000, guid: b77cee43d2b5441b48bf0eb1e9fdc661, type: 3}
@@ -15910,20 +15911,20 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - 'Koen:
+    - '(2/7)Koen:
 
       What is it may?'
-    - 'May:
+    - '(3/7)May:
 
-      Since you''re already heading to the supermarket, could you possibly
-      get some thins for me as well?'
-    - 'Koen:
+      Since you''re already heading to the supermarket, could you
+      possibly get some thins for me as well?'
+    - '(4/7)Koen:
 
       Of course! What do you need?'
-    - "May: \nI need some risotto and fish for the paella I\u2019m making for the
-      townfest tomorrow. "
-    - "Koen: \nI\u2019ll get those for you. "
-    - "May: \nThanks Koen!  "
+    - "(5/7)May: \nI need some risotto and fish for the paella I\u2019m making for
+      the townfest tomorrow. "
+    - "(6/7)Koen: \nI\u2019ll get those for you. "
+    - "(7/7)May: \nThanks Koen!  "
 --- !u!114 &1376456275
 MonoBehaviour:
   m_ObjectHideFlags: 0

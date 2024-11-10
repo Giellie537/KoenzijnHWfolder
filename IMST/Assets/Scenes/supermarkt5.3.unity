@@ -22598,25 +22598,26 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - 'Koen:
+    - '(2/8)Koen:
 
       Oh hi Sarah! What''s up?'
-    - 'Sarah:
+    - '(3/8)Sarah:
 
       Well i just delivered some fish for the supermarket.'
-    - 'Sarah:
+    - '(4/8)Sarah:
 
       But now my car won''t start anymore'
-    - 'Sarah:
+    - '(5/8)Sarah:
 
       Can you help?'
-    - 'Koen:
+    - '(6/8)Koen:
 
       Of course! What do you need me to do?'
-    - 'Sarah:
+    - '(7/8)Sarah:
 
-      If you push the car from the back, I''ll try to start it up. '
-    - 'Koen:
+      If you push the car from the back, I''ll try to start it
+      up. '
+    - '(8/8)Koen:
 
       Alright!'
 --- !u!114 &1287699444
@@ -27951,7 +27952,7 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - 'Sarah:
+    - '(1/8)Sarah:
 
       Koen!'
   Papiergeluid: {fileID: 0}
