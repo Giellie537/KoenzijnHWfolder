@@ -37,7 +37,7 @@ public void klik1() {
 
      else {
         DialogueMan.SetActive(true);
-        dialogueText.text = "Koen:\nMaybe I should accept a quest for the community before leaving";
+        dialogueText.text = "Koen:\nMaybe I should accept some quests for the community before leaving";
 
         StartCoroutine(Textweg());
      }

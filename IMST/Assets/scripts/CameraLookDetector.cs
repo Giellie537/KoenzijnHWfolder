@@ -45,8 +45,9 @@ public class CameraLookDetector : MonoBehaviour
     void LookAtInteractible(ObjectInteraction obj)
     {
       currentLookTarget = obj;
-      if (obj != null && obj.cursor != null)
+      if (obj != null && obj.cursor != null){
         mouseCursor.SetCursor(obj.cursor);
+      }
       else 
         mouseCursor.SetCursor();
     }
