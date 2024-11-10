@@ -14,7 +14,6 @@ public class Triggermay : MonoBehaviour
         boxcollider.enabled = true;
         triggered = true;
         sarahcar.SetActive(true);
-
     }
 
 
