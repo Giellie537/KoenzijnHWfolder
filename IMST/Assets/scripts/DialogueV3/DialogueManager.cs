@@ -11,9 +11,7 @@ public class DialogueManager : MonoBehaviour {
 	public TextMeshProUGUI nameText;
 	public TextMeshProUGUI dialogueText;
 	
-	
-
-	public int autoCloseInTime = 0;
+	public int autoCloseInTime = 4;
 
 
 	private Queue<string> sentences;
@@ -81,8 +79,8 @@ public class DialogueManager : MonoBehaviour {
 		}
 
 		//sluit messagebox na X seconden.
-		//yield return new WaitForSeconds(autoCloseInTime);
-        //EndDialogue();
+		yield return new WaitForSeconds(autoCloseInTime);
+        EndDialogue();
     }
 
 	public void EndDialogue()
