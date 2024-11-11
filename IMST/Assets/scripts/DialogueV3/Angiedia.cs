@@ -36,7 +36,7 @@ public class Angiedia : MonoBehaviour {
 
 	public void StartDialogue (Dialogue dialogue)
 	{
-		if(count <= 10)
+		if(count <= 8)
 		{
 		DialogueMan.SetActive(true);
 		nameText.text = dialogue.name;

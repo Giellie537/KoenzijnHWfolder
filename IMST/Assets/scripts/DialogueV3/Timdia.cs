@@ -36,7 +36,7 @@ public class Timdia : MonoBehaviour {
 
 	public void StartDialogue (Dialogue dialogue)
 	{
-		if(count <= 10)
+		if(count <= 5)
 		{
 		DialogueMan.SetActive(true);
 		nameText.text = dialogue.name;

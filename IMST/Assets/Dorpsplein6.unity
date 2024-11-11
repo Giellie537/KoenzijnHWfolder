@@ -810,9 +810,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17f36f39a19b94083b18809d4e23c951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueMan: {fileID: 1992323638}
-  nameText: {fileID: 1141258114}
-  dialogueText: {fileID: 1499222651}
+  DialogueMan: {fileID: 106552592}
+  nameText: {fileID: 682196263}
+  dialogueText: {fileID: 562030766}
   autoCloseInTime: 0
   Papiergeluid: {fileID: 0}
 --- !u!114 &68727951
@@ -830,7 +830,27 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - 
+    - 'Koen: (1/8)
+
+      Hey Angie!'
+    - 'Angie: (2/8)
+
+      Hello darling! How are you enjoying the feast?'
+    - "Koen: (3/8)\nI really like it! But I kinda feel like people are mad at me\u2026. "
+    - 'Angie: (4/8)
+
+      What makes you say that? '
+    - "Koen: (5/8)\nI got told that I didn\u2019t help enough people yesterday\u2026. "
+    - 'Angie: (6/8)
+
+      Oh honey, you did what you could. '
+    - 'Angie: (7/8)
+
+      Anyone expecting more than that from you needs to calm
+      down. '
+    - 'Koen: (8/8)
+
+      Thanks Angie, I appreciate it.    '
 --- !u!114 &68727952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1184,7 +1204,7 @@ GameObject:
   - component: {fileID: 106552595}
   - component: {fileID: 106552594}
   m_Layer: 5
-  m_Name: DialogueWindow
+  m_Name: DialogueAngie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1203,13 +1223,14 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 385506575}
+  - {fileID: 2135492991}
   - {fileID: 682196261}
   - {fileID: 562030768}
   m_Father: {fileID: 1335344424}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -106.14188}
+  m_AnchoredPosition: {x: 0, y: -146}
   m_SizeDelta: {x: 700, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &106552594
@@ -4704,7 +4725,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a6b0ec70f80962e4bb78f68ebcf6b8c7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f6baa92e800374cc2839f4eb93356de3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5972,25 +5993,33 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - 'Koen:
+    - 'Koen: (1/11)
 
       Hey Gerard!'
-    - "Gerard: \nHello Koen. "
-    - "Koen: \nIs.. everything alright? "
-    - 'Gerard:
+    - 'Gerard: (2/11)
 
-      While I can say that I am alright, I cannot say the same for
-      some fellows of the community.'
-    - 'Gerard:
+      Hello Koen. '
+    - 'Koen: (3/11)
+
+      Is.. everything alright? '
+    - 'Gerard: (4/11)
+
+      While I can say that I am alright, I cannot say the
+      same for some fellows of the community.'
+    - 'Gerard: (5/11)
 
       They seem to be quite upset with you.'
-    - "Koen: \nWhy? "
-    - "Gerard: \nIt seems they believe you weren\u2019t helpful enough yesterday. "
-    - "Koen: \nYou don\u2019t believe that do you? I was helping people all day yesterday. "
-    - "Gerard: \nWhile I don\u2019t personally see you being at fault here, the community
-      sees what the community sees.  "
-    - "Gerard: \nI think it would be best if you don\u2019t stay for much longer. "
-    - "Koen: \nOh\u2026.     "
+    - 'Koen: (6/11)
+
+      Why? '
+    - "Gerard: (7/11)\nIt seems they believe you weren\u2019t helpful enough yesterday. "
+    - "Koen: (8/11)\nYou don\u2019t believe that do you? I was helping people all
+      day yesterday. "
+    - "Gerard: (/11)\nWhile I don\u2019t personally see you being at fault here,
+      the community sees what the community sees.  "
+    - "Gerard: (10/11)\nI think it would be best if you don\u2019t stay for much
+      longer. "
+    - "Koen: (11/11)\nOh\u2026.     "
 --- !u!136 &446997575
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6043,6 +6072,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 446997583}
+        m_TargetAssemblyTypeName: negative, Assembly-CSharp
+        m_MethodName: add
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &446997582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6060,6 +6101,21 @@ MonoBehaviour:
   dialogueText: {fileID: 562030766}
   autoCloseInTime: 10
   Papiergeluid: {fileID: 0}
+--- !u!114 &446997583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446997569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26689f2856d644e43938d1f6789b586d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasInteracted: 0
+  negcount: 0
+  negcountAdd: 1
 --- !u!1 &452531471 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 10e95a6bce98047479e28725662417fe, type: 3}
@@ -6701,7 +6757,7 @@ Animator:
   m_GameObject: {fileID: 488899232}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 68ec0867ae2c846bba942017b4e40498, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -6764,23 +6820,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &488899237
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 488899232}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fce7a20fb2344d2a86436d2def30561, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DialogueMan: {fileID: 4098704}
-  nameText: {fileID: 1542266789}
-  dialogueText: {fileID: 468449316}
-  autoCloseInTime: 0
-  Papiergeluid: {fileID: 0}
 --- !u!114 &488899238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8070,7 +8109,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 167.7, y: -7}
+  m_AnchoredPosition: {x: 163, y: 7.8}
   m_SizeDelta: {x: 600, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &564017049
@@ -15371,7 +15410,7 @@ RectTransform:
   m_GameObject: {fileID: 1099859366}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1335344424}
@@ -15762,7 +15801,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 80c861000468f9844a311a09f7cd074c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9b29565fbb5424448a5d1371c6f370e4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16331,6 +16370,87 @@ Transform:
   m_Children: []
   m_Father: {fileID: 682445454}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1162686164
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 13bf27e1af64d428c9af1146f154ad68, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.3536
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 13bf27e1af64d428c9af1146f154ad68, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.3536
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 13bf27e1af64d428c9af1146f154ad68, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.3536
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 13bf27e1af64d428c9af1146f154ad68, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.198778
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 13bf27e1af64d428c9af1146f154ad68, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.99
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 13bf27e1af64d428c9af1146f154ad68, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.594336
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 13bf27e1af64d428c9af1146f154ad68, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.87513584
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 13bf27e1af64d428c9af1146f154ad68, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 13bf27e1af64d428c9af1146f154ad68, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.48387733
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 13bf27e1af64d428c9af1146f154ad68, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 13bf27e1af64d428c9af1146f154ad68, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 13bf27e1af64d428c9af1146f154ad68, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -57.878
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 13bf27e1af64d428c9af1146f154ad68, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 13bf27e1af64d428c9af1146f154ad68, type: 3}
+      propertyPath: m_Name
+      value: Sarah no wave
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 13bf27e1af64d428c9af1146f154ad68, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1287699489}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 13bf27e1af64d428c9af1146f154ad68, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1287699488}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 13bf27e1af64d428c9af1146f154ad68, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1287699487}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 13bf27e1af64d428c9af1146f154ad68, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1287699486}
+  m_SourcePrefab: {fileID: 100100000, guid: 13bf27e1af64d428c9af1146f154ad68, type: 3}
 --- !u!1 &1170169391
 GameObject:
   m_ObjectHideFlags: 0
@@ -17557,6 +17677,9 @@ PrefabInstance:
       addedObject: {fileID: 446997571}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: db5b848b0c7232b4f907d11a8362dc28, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 446997583}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: db5b848b0c7232b4f907d11a8362dc28, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 446997580}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: db5b848b0c7232b4f907d11a8362dc28, type: 3}
       insertIndex: -1
@@ -18391,6 +18514,116 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6b46c6d63d80b6469fe0d17c963c5ce, type: 3}
+--- !u!1 &1287699485 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 13bf27e1af64d428c9af1146f154ad68, type: 3}
+  m_PrefabInstance: {fileID: 1162686164}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1287699486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287699485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: decbc2b7e688e4c9d86f858dc1afc70a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: 
+  cursor: {fileID: 21300000, guid: e9715cc6f015ad4439b371a79b6c7562, type: 3}
+  interactFunction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 488899238}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogueSarah
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!136 &1287699487
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287699485}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.26611203
+  m_Height: 1.7905487
+  m_Direction: 1
+  m_Center: {x: 0.02900202, y: 0.7566287, z: 0.0065972}
+--- !u!114 &1287699488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287699485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca5080adfad054d42b940c47760723dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - "Koen: (1/9)\nHey Sarah! How\u2019s the car doing? "
+    - "Sarah: (2/9)\nIt\u2019s all fixed up! Thank you for helping yesterday. "
+    - "Koen: (3/9)\nAnytime! It\u2019s nice to know that I at least made one person
+      happy yesterday. "
+    - 'Sarah: (4/9)
+
+      What do you mean? '
+    - "Koen: (5/9)\nWell, it seems like some people think I didn\u2019t help enough
+      yesterday\u2026 "
+    - "Sarah: (6/9)\nThat\u2019s so screwed up! Angie and May even told me how big
+      of a help you were to them! "
+    - "Koen: (7/9)\nGuess there\u2019s no pleasing people sometimes\u2026. "
+    - "Sarah: (8/9)\nJust know that I\u2019ll be in your corner if people get too
+      mean. "
+    - 'Koen: (9/9)
+
+      Thank you Sarah, that means a lot.    '
+--- !u!95 &1287699489
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287699485}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 68ec0867ae2c846bba942017b4e40498, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1287937312
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19090,10 +19323,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 800, y: 900}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -22964,7 +23197,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1609126407
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28326,7 +28559,7 @@ Transform:
   m_GameObject: {fileID: 1647546113}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 2.24, y: 3.65, z: -0.06}
+  m_LocalPosition: {x: 2.218, y: 3.057, z: 0.017}
   m_LocalScale: {x: 0.17268, y: 0.17268, z: 0.20448695}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -29133,6 +29366,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sarah
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bb3990d2a1e194b4b88dcd1d4f0c2d03, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29146,9 +29383,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bb3990d2a1e194b4b88dcd1d4f0c2d03, type: 3}
       insertIndex: -1
       addedObject: {fileID: 488899238}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bb3990d2a1e194b4b88dcd1d4f0c2d03, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 488899237}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bb3990d2a1e194b4b88dcd1d4f0c2d03, type: 3}
       insertIndex: -1
       addedObject: {fileID: 488899236}
@@ -29595,12 +29829,16 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - "Koen: \nHi May! How are you? "
-    - "May: \nGood! I\u2019m glad with how my paella turned out! "
-    - "Koen: \nIt\u2019s absolutely delicious! Is your little brother coming? "
-    - "May: \nNah, big gatherings aren\u2019t really Jist\xE9\u2019s thing."
-    - "Koen: \nTotally understandable. I\u2019ll see him some other time then! "
-    - "May: \nDefinitely! Have a good time today! "
+    - 'Koen: (1/6)
+
+      Hi May! How are you? '
+    - "May: (2/6)\nGood! I\u2019m glad with how my paella turned out! "
+    - "Koen: (3/6)\nIt\u2019s absolutely delicious! Is your little brother coming? "
+    - "May: (4/6)\nNah, big gatherings aren\u2019t really Jist\xE9\u2019s thing."
+    - "Koen: (5/6)\nTotally understandable. I\u2019ll see him some other time then! "
+    - 'May: (6/6)
+
+      Definitely! Have a good time today! '
 --- !u!114 &1767993356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32027,6 +32265,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 50590b13b3648e446a91acee5a88969e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2145946158}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 50590b13b3648e446a91acee5a88969e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2145946165}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 50590b13b3648e446a91acee5a88969e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2145946164}
@@ -35083,6 +35324,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2135316712}
   m_CullTransparentMesh: 1
+--- !u!1 &2135492990
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2135492991}
+  - component: {fileID: 2135492993}
+  - component: {fileID: 2135492992}
+  m_Layer: 5
+  m_Name: Image (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2135492991
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135492990}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.28689614, y: 0.28689614, z: 0.28689614}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 106552593}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -181.1, y: 9.4}
+  m_SizeDelta: {x: 281, y: 196}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2135492992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135492990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 18b9412845cd244288c9cddda9b5a163, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2135492993
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135492990}
+  m_CullTransparentMesh: 1
 --- !u!1 &2137295516 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 36230767880094400, guid: dd8c145e62469574c8988c6d5ce0db70, type: 3}
@@ -35228,7 +35544,20 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - 
+    - 'Koen: (1/6)
+
+      Hi Tim! '
+    - 'Tim:(2/6)
+
+      Why are you pretending to be friendly? '
+    - 'Koen: (3/6)
+
+      What do you mean? '
+    - "Tim: (4/6)\nYou didn\u2019t come help with the garden yesterday! "
+    - "Koen: (5/6)\nI wanted to, but I was too busy helping other people\u2026 "
+    - 'Tim: (6/6)
+
+      Yea right. Just leave me alone.  '
 --- !u!114 &2145946164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35258,6 +35587,33 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2145946165}
+        m_TargetAssemblyTypeName: negative, Assembly-CSharp
+        m_MethodName: add
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2145946165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145946157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26689f2856d644e43938d1f6789b586d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasInteracted: 0
+  negcount: 0
+  negcountAdd: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -35275,6 +35631,7 @@ SceneRoots:
   - {fileID: 700293593}
   - {fileID: 1233718859}
   - {fileID: 1697504701}
+  - {fileID: 1162686164}
   - {fileID: 1876533056}
   - {fileID: 216130610}
   - {fileID: 682445454}
