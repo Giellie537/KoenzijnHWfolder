@@ -1725,13 +1725,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 921bf333020e54f8ba5e730f0971f2d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueMan: {fileID: 0}
-  nameText: {fileID: 0}
-  dialogueText: {fileID: 0}
+  DialogueMan: {fileID: 355740828}
+  nameText: {fileID: 1422161651}
+  dialogueText: {fileID: 1637146108}
   autoCloseInTime: 0
-  notif: {fileID: 0}
-  notiftext: {fileID: 0}
-  questinfo: {fileID: 0}
+  notif: {fileID: 414402432}
+  notiftext: {fileID: 730553229}
+  questinfo: {fileID: 1101760499}
   Papiergeluid: {fileID: 8300000, guid: db04b9f76bb024bac8cd324adc4b39af, type: 3}
 --- !u!82 &125497262
 AudioSource:
@@ -1952,20 +1952,6 @@ MonoBehaviour:
   triggered: 0
   boxcollider: {fileID: 615958424}
   sarahcar: {fileID: 1376456269}
---- !u!114 &125497268
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 125497258}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f0802ef2ee11134f93865fc3188b454, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  said: 0
-  hey: {fileID: 8300000, guid: 4158eac354f344025b20b767a986a6fc, type: 3}
 --- !u!1 &127604081
 GameObject:
   m_ObjectHideFlags: 0
@@ -2001,10 +1987,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   travelUI: {fileID: 0}
   koen: {fileID: 1200332911}
-  crosshair: {fileID: 0}
+  crosshair: {fileID: 1727691822}
   playermove: {fileID: 1200332919}
   playerlook: {fileID: 1200332918}
-  cameralookdetector: {fileID: 0}
+  cameralookdetector: {fileID: 184808424}
   Papiergeluid: {fileID: 0}
 --- !u!114 &127604083
 MonoBehaviour:
@@ -2692,9 +2678,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d012273009b272240b706f2908d1600f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 125497266}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d012273009b272240b706f2908d1600f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 125497268}
   m_SourcePrefab: {fileID: 100100000, guid: d012273009b272240b706f2908d1600f, type: 3}
 --- !u!1 &162196854
 GameObject:
@@ -3179,6 +3162,114 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: a158e0d71b9d28a449578a6a542211cb, type: 3}
   m_PrefabInstance: {fileID: 545568641}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &184808423
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 184808427}
+  - component: {fileID: 184808426}
+  - component: {fileID: 184808425}
+  - component: {fileID: 184808424}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &184808424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184808423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8443f4d607af48e99e986d16a8bb72d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseCursor: {fileID: 1727691823}
+  interactKey: 101
+  maxInteractionDistance: 2
+--- !u!81 &184808425
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184808423}
+  m_Enabled: 1
+--- !u!20 &184808426
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184808423}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &184808427
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184808423}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.70710576, z: -0, w: 0.70710784}
+  m_LocalPosition: {x: 0.049999237, y: 0.5699997, z: 0.21999979}
+  m_LocalScale: {x: 1, y: 1.8, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1200332923}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1001 &185714258
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4960,9 +5051,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: ac7e9e94c6fbe6243a85d78dd2138a1e, type: 3}
     m_FontSize: 60
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 65
@@ -5390,9 +5481,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: ac7e9e94c6fbe6243a85d78dd2138a1e, type: 3}
     m_FontSize: 60
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 60
@@ -5932,7 +6023,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &507551944
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6602,7 +6693,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 184808426}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -7227,9 +7318,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f187db97ae867461882b559076421ddc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueMan: {fileID: 0}
+  DialogueMan: {fileID: 355740828}
   nameText: {fileID: 0}
-  dialogueText: {fileID: 0}
+  dialogueText: {fileID: 1637146108}
   autoCloseInTime: 5
 --- !u!82 &615958432
 AudioSource:
@@ -7406,114 +7497,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 641520822}
   m_CullTransparentMesh: 1
---- !u!1 &648232120
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 648232121}
-  - component: {fileID: 648232124}
-  - component: {fileID: 648232123}
-  - component: {fileID: 648232122}
-  m_Layer: 0
-  m_Name: Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &648232121
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 648232120}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1200332923}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &648232122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 648232120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8443f4d607af48e99e986d16a8bb72d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseCursor: {fileID: 1727691823}
-  interactKey: 101
-  maxInteractionDistance: 2
---- !u!81 &648232123
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 648232120}
-  m_Enabled: 1
---- !u!20 &648232124
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 648232120}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_Iso: 200
-  m_ShutterSpeed: 0.005
-  m_Aperture: 16
-  m_FocusDistance: 10
-  m_FocalLength: 50
-  m_BladeCount: 5
-  m_Curvature: {x: 2, y: 11}
-  m_BarrelClipping: 0.25
-  m_Anamorphism: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
 --- !u!1001 &652469178
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10642,7 +10625,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &954861010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11775,9 +11758,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: ac7e9e94c6fbe6243a85d78dd2138a1e, type: 3}
     m_FontSize: 50
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 5
     m_MaxSize: 60
@@ -13091,7 +13074,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1fc6cfe08d303c4c847bc289b1df4eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counttext: {fileID: 0}
+  counttext: {fileID: 387278808}
 --- !u!114 &1200332916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13104,11 +13087,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39e04ff4bd50a04fb1cf8a3aca439cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  QuestIndicator: {fileID: 1323860895}
+  QuestIndicator: {fileID: 2076152301}
   QuestDropdown: {fileID: 818886354}
-  QuestExtra: {fileID: 507551943}
-  Community: {fileID: 0}
-  Questinfo: {fileID: 0}
+  QuestExtra: {fileID: 2079746490}
+  Community: {fileID: 34720408}
+  Questinfo: {fileID: 507551943}
   Phone: {fileID: 1354559159}
   extended: 0
   triggered: 0
@@ -13276,8 +13259,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1.23981, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 184808427}
   - {fileID: 2011294050}
-  - {fileID: 648232121}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1200332924
@@ -14007,12 +13990,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b9009d41044c8e428ad32dce61e4361, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  travelUI: {fileID: 0}
+  travelUI: {fileID: 923916741}
   koen: {fileID: 1200332911}
-  crosshair: {fileID: 0}
+  crosshair: {fileID: 1727691822}
   playermove: {fileID: 1200332919}
   playerlook: {fileID: 1200332918}
-  cameralookdetector: {fileID: 0}
+  cameralookdetector: {fileID: 184808424}
   Papiergeluid: {fileID: 8300000, guid: 946f8e322b1f443a7aeccb17717198dd, type: 3}
 --- !u!4 &1235602942 stripped
 Transform:
@@ -15316,8 +15299,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Papiergeluid: {fileID: 0}
-  Questoverlay: {fileID: 0}
-  text: {fileID: 0}
+  Questoverlay: {fileID: 1323860895}
+  text: {fileID: 144426935}
   gepakt: 1
   watch: {fileID: 0}
 --- !u!23 &1354559160
@@ -15890,17 +15873,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f7c42a23bf0a7e49a426e956f9c4d12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueMan: {fileID: 0}
+  DialogueMan: {fileID: 355740828}
   nameText: {fileID: 0}
-  dialogueText: {fileID: 0}
-  buttonimage: {fileID: 0}
-  buttonbutton: {fileID: 0}
-  TextParent: {fileID: 0}
+  dialogueText: {fileID: 1637146108}
+  buttonimage: {fileID: 1486699886}
+  buttonbutton: {fileID: 1486699885}
+  TextParent: {fileID: 562454044}
   autoCloseInTime: 2
   Papiergeluid: {fileID: 8300000, guid: 1ac02f887251545acbedb0afab0a4aed, type: 3}
-  notif: {fileID: 0}
-  notiftext: {fileID: 0}
-  questinfo: {fileID: 0}
+  notif: {fileID: 414402432}
+  notiftext: {fileID: 730553229}
+  questinfo: {fileID: 1023970645}
 --- !u!114 &1376456274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16681,9 +16664,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: ac7e9e94c6fbe6243a85d78dd2138a1e, type: 3}
     m_FontSize: 60
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 67
@@ -20242,8 +20225,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collided: 0
-  notif: {fileID: 0}
-  notiftext: {fileID: 0}
+  notif: {fileID: 414402432}
+  notiftext: {fileID: 730553229}
   desc: {fileID: 0}
   TriggerMay: {fileID: 125497266}
 --- !u!1 &1679125079
@@ -21561,7 +21544,7 @@ MonoBehaviour:
   questboard: {fileID: 1797849965}
   playerlook: {fileID: 1200332918}
   playermove: {fileID: 1200332919}
-  cameralookdetector: {fileID: 0}
+  cameralookdetector: {fileID: 184808424}
   added: 0
 --- !u!114 &1795351339
 MonoBehaviour:
@@ -24690,7 +24673,7 @@ MonoBehaviour:
   crosshair: {fileID: 1727691822}
   playermove: {fileID: 1200332919}
   playerlook: {fileID: 1200332918}
-  cameralookdetector: {fileID: 0}
+  cameralookdetector: {fileID: 184808424}
   Papiergeluid: {fileID: 0}
 --- !u!114 &2066525158
 MonoBehaviour:
