@@ -42,7 +42,7 @@ EditorBuildSettings:
     path: Assets/versies/koenshuis10.1.unity
     guid: 7b9db78b40167ea40a6b69c50cec5cbf
   - enabled: 1
-    path: Assets/Scenes/supermarkt5.3.unity
+    path: Assets/versies/supermarkt5.3.unity
     guid: 30f529b2d1ebfa2469d2d61e71ccee8e
   - enabled: 1
     path: Assets/Scenes/outsidesunday1.1.unity

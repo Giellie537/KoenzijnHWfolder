@@ -17236,6 +17236,7 @@ GameObject:
   - component: {fileID: 1349225253}
   - component: {fileID: 1349225252}
   - component: {fileID: 1349225251}
+  - component: {fileID: 1349225254}
   - component: {fileID: 1349225244}
   - component: {fileID: 1349225242}
   - component: {fileID: 1349225250}
@@ -17671,6 +17672,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1349225240}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1349225254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349225240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de16a25efad052946873ab0998ca93d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueMan: {fileID: 1171929650}
+  nameText: {fileID: 1016420878}
+  dialogueText: {fileID: 1547183645}
 --- !u!1001 &1350730459
 PrefabInstance:
   m_ObjectHideFlags: 0
