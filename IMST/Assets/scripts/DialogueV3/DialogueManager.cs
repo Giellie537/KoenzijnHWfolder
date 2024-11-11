@@ -26,6 +26,9 @@ public class DialogueManager : MonoBehaviour {
 
 	private int count; 
 	// Use this for initialization
+
+	public float delayTime = 1.0f;
+
 	void Start () {
 		sentences = new Queue<string>();
 		audioSource = GetComponent<AudioSource>();
@@ -85,6 +88,7 @@ public class DialogueManager : MonoBehaviour {
 
 	public void EndDialogue()
 	{
+		Debug.Log("ikdoet");
         DialogueMan.SetActive(false);
         sentences = new Queue<string>();
 
@@ -94,6 +98,7 @@ public class DialogueManager : MonoBehaviour {
         notiftext.text = "Quest details added";
 		questinfo.text = "4kg flour\n3 L milk";
         StartCoroutine(Textweg());
+		StartCoroutine(ReenableDialogueManAfterDelay());
 
     }
 
@@ -102,6 +107,10 @@ public class DialogueManager : MonoBehaviour {
         notif.SetActive(false);
      }
 	 
+	 IEnumerator ReenableDialogueManAfterDelay() {
+    yield return new WaitForSeconds(delayTime);  
+    DialogueMan.SetActive(true);                 
+}
 	
 	
 

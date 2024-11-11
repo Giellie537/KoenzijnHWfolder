@@ -17,15 +17,18 @@ public class Gerarddia : MonoBehaviour {
 	private Queue<string> sentences;
 
 	//reference notification
-	public GameObject notif;
-    public Text notiftext;
+	// public GameObject notif;
+    // public Text notiftext;
 
-	public Text questinfo;
+	// public Text questinfo;
 	private AudioSource audioSource;
     public AudioClip Papiergeluid;
 
 	private int count; 
 	// Use this for initialization
+
+	// public float delayTime = 1.0f;
+
 	void Start () {
 		sentences = new Queue<string>();
 		audioSource = GetComponent<AudioSource>();
@@ -85,24 +88,31 @@ public class Gerarddia : MonoBehaviour {
 
 	public void EndDialogue()
 	{
+		Debug.Log("ikdoet");
         DialogueMan.SetActive(false);
         sentences = new Queue<string>();
 
 		Debug.Log(count);
         //notification
-        notif.SetActive(true);
-        notiftext.text = "Quest details added";
-		questinfo.text = "4kg flour\n3 L milk";
-        StartCoroutine(Textweg());
+        // notif.SetActive(true);
+        // notiftext.text = "Quest details added";
+		// questinfo.text = "4kg flour\n3 L milk";
+        // StartCoroutine(Textweg());
+		// StartCoroutine(ReenableDialogueManAfterDelay());
 
     }
 
-        IEnumerator Textweg() {
-        yield return new WaitForSeconds(5);
-        notif.SetActive(false);
-     }
+        // IEnumerator Textweg() {
+        // yield return new WaitForSeconds(5);
+        // notif.SetActive(false);
+     
 	 
+// 	 IEnumerator ReenableDialogueManAfterDelay() {
+//     yield return new WaitForSeconds(delayTime);  
+//     DialogueMan.SetActive(true);                 
+// }
+}
 	
 	
 
-}
+

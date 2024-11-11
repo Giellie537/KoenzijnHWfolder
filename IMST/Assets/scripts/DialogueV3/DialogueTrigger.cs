@@ -15,5 +15,25 @@ public class DialogueTrigger : MonoBehaviour {
 	{
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
 	}
+	  public void TriggerDialogueGerard ()
+	{
+        FindObjectOfType<Gerarddia>().StartDialogue(dialogue);
+	}
+	  public void TriggerDialogueMay ()
+	{
+        FindObjectOfType<Maydia>().StartDialogue(dialogue);
+	}
+	  public void TriggerDialogueTim ()
+	{
+        FindObjectOfType<Timdia>().StartDialogue(dialogue);
+	}
+	  public void TriggerDialogueSarah ()
+	{
+        FindObjectOfType<Sarahdia>().StartDialogue(dialogue);
+	}
+	  public void TriggerDialogueAngie()
+	{
+        FindObjectOfType<Angiedia>().StartDialogue(dialogue);
+	}
 
 }
