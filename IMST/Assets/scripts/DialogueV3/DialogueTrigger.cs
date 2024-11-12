@@ -49,6 +49,9 @@ public class DialogueTrigger : MonoBehaviour {
         FindObjectOfType<Randomdia>().StartDialogue(dialogue);
 	}
 
-
+	public void TriggerDialogueSarahHelp()
+	{
+        FindObjectOfType<SarahHelp>().StartDialogue(dialogue);
+	}
 
 }
