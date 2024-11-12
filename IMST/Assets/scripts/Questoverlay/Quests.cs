@@ -36,6 +36,8 @@ public class Quests : MonoBehaviour
     //voor deur script
     public bool quest1 = false;
     public bool quest2 = false;
+    //deur script 2
+    public bool openend = false;
 
     // //firsttime
     // public bool first = true;
@@ -89,6 +91,7 @@ public class Quests : MonoBehaviour
             if(extended2 == false){
             Community.SetActive(true);
             extended2 = true;
+            openend = true;
         }
         else{
             Community.SetActive(false);
