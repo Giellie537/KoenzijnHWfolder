@@ -48,10 +48,17 @@ public class DialogueTrigger : MonoBehaviour {
 	{
         FindObjectOfType<Randomdia>().StartDialogue(dialogue);
 	}
-
 	public void TriggerDialogueSarahHelp()
 	{
         FindObjectOfType<SarahHelp>().StartDialogue(dialogue);
 	}
 
+public void TriggerDialogueangiereturn()
+	{
+        FindObjectOfType<angiererun>().StartDialogue(dialogue);
+	}
+	public void TriggerDialoguemayreturn()
+	{
+        FindObjectOfType<mayreturn>().StartDialogue(dialogue);
+	}
 }
