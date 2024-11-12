@@ -37,7 +37,7 @@ private bool hasPlayedAudio = false;
 
 	public void StartDialogue (Dialogue dialogue)
 	{
-		if(count <= 8)
+		if(count <= 7)
 		{
 		DialogueMan.SetActive(true);
 		nameText.text = dialogue.name;
