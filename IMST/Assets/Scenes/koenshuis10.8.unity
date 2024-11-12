@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 9cac74e6e05b2d34fa6767287253e280, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -2731,6 +2731,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!114 &184060639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7402,6 +7403,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!114 &600760319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7960,6 +7962,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!114 &655933008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8505,6 +8508,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!114 &676367196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11027,6 +11031,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!114 &874076590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12557,6 +12562,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!4 &969161526 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5032153666536681074, guid: 419bf7a95ce43b847833705cfa58c35b, type: 3}
@@ -15391,6 +15397,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!114 &1218649795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15693,6 +15700,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!114 &1230350033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16549,6 +16557,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!114 &1304844638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17164,6 +17173,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!114 &1330759740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17332,6 +17342,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!114 &1351679939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17561,6 +17572,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!114 &1383913935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18828,6 +18840,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!114 &1444166205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19039,6 +19052,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!114 &1466742012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19729,6 +19743,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!114 &1503699270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23386,6 +23401,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!114 &1783140535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25153,6 +25169,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!114 &1917908455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25504,6 +25521,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!114 &1941262700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26460,6 +26478,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!114 &2005740045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27017,6 +27036,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!114 &2016573382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28266,6 +28286,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!114 &2088908245
 MonoBehaviour:
   m_ObjectHideFlags: 0
