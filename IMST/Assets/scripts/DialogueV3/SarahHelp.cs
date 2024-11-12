@@ -4,8 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class Sarahdia : MonoBehaviour {
-
+public class SarahHelp : MonoBehaviour {
 
 	public GameObject DialogueMan;
 	public TextMeshProUGUI nameText;
@@ -13,13 +12,13 @@ public class Sarahdia : MonoBehaviour {
 	
 	public int autoCloseInTime = 10;
 
-
+private bool hasPlayedAudio = false;
 	private Queue<string> sentences;
 
 	//reference notification
 	// public GameObject notif;
     // public Text notiftext;
-private bool hasPlayedAudio = false;
+
 	// public Text questinfo;
 	private AudioSource audioSource;
     public AudioClip Papiergeluid;
@@ -38,7 +37,7 @@ private bool hasPlayedAudio = false;
 
 	public void StartDialogue (Dialogue dialogue)
 	{
-		if(count <= 8)
+		if(count <= 6)
 		{
 		DialogueMan.SetActive(true);
 		nameText.text = dialogue.name;
