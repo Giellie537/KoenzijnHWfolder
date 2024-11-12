@@ -35,5 +35,8 @@ public class DialogueTrigger : MonoBehaviour {
 	{
         FindObjectOfType<Angiedia>().StartDialogue(dialogue);
 	}
-
+	  public void TriggerDialogueAngiesquest()
+	{
+        FindObjectOfType<Angiesquest>().StartDialogue(dialogue);
+	}
 }

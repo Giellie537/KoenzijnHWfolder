@@ -1713,26 +1713,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &125497261
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 125497258}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 921bf333020e54f8ba5e730f0971f2d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DialogueMan: {fileID: 355740828}
-  nameText: {fileID: 1422161651}
-  dialogueText: {fileID: 1637146108}
-  autoCloseInTime: 0
-  notif: {fileID: 414402432}
-  notiftext: {fileID: 730553229}
-  questinfo: {fileID: 1101760499}
-  Papiergeluid: {fileID: 8300000, guid: db04b9f76bb024bac8cd324adc4b39af, type: 3}
 --- !u!82 &125497262
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1892,7 +1872,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 125497263}
         m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
+        m_MethodName: TriggerDialogueAngiesquest
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1952,6 +1932,27 @@ MonoBehaviour:
   triggered: 0
   boxcollider: {fileID: 615958424}
   sarahcar: {fileID: 1376456269}
+--- !u!114 &125497267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125497258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52f4c026eb72e41499e157250549b8de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueMan: {fileID: 355740828}
+  nameText: {fileID: 1422161651}
+  dialogueText: {fileID: 1637146108}
+  autoCloseInTime: 10
+  notif: {fileID: 414402432}
+  notiftext: {fileID: 730553229}
+  questinfo: {fileID: 1944257066}
+  Papiergeluid: {fileID: 8300000, guid: db04b9f76bb024bac8cd324adc4b39af, type: 3}
+  delayTime: 1
 --- !u!1 &127604081
 GameObject:
   m_ObjectHideFlags: 0
@@ -2665,13 +2666,13 @@ PrefabInstance:
       addedObject: {fileID: 125497264}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d012273009b272240b706f2908d1600f, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 125497267}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d012273009b272240b706f2908d1600f, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 125497263}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d012273009b272240b706f2908d1600f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 125497262}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d012273009b272240b706f2908d1600f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 125497261}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d012273009b272240b706f2908d1600f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 125497259}
