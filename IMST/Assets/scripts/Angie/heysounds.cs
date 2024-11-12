@@ -13,10 +13,7 @@ public class heysounds : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
     public void saystuff() {
-        if(!said){
-                audioSource.PlayOneShot(hey);
-                said = true;
-                Debug.Log("HEY");
-        }
+       audioSource.PlayOneShot(hey);
+       said = true;
     }
 }

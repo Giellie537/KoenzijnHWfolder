@@ -19,7 +19,7 @@ public class Sarahdia : MonoBehaviour {
 	//reference notification
 	// public GameObject notif;
     // public Text notiftext;
-
+private bool hasPlayedAudio = false;
 	// public Text questinfo;
 	private AudioSource audioSource;
     public AudioClip Papiergeluid;
@@ -33,6 +33,7 @@ public class Sarahdia : MonoBehaviour {
 		sentences = new Queue<string>();
 		audioSource = GetComponent<AudioSource>();
 		count = 0;
+		hasPlayedAudio = false;
 	}
 
 	public void StartDialogue (Dialogue dialogue)
@@ -41,7 +42,11 @@ public class Sarahdia : MonoBehaviour {
 		{
 		DialogueMan.SetActive(true);
 		nameText.text = dialogue.name;
-		audioSource.PlayOneShot(Papiergeluid);
+		
+		if (!hasPlayedAudio) {
+				audioSource.PlayOneShot(Papiergeluid);
+				hasPlayedAudio = true; // Zet op true zodat het niet opnieuw wordt afgespeeld
+			}
         
 		foreach (string sentence in dialogue.sentences)
 		{
