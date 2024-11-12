@@ -16,23 +16,17 @@ public class Gerarddia : MonoBehaviour {
 
 	private Queue<string> sentences;
 
-	//reference notification
-	// public GameObject notif;
-    // public Text notiftext;
-
-	// public Text questinfo;
 	private AudioSource audioSource;
     public AudioClip Papiergeluid;
 
 	private int count; 
-	// Use this for initialization
-
-	// public float delayTime = 1.0f;
+	private bool hasPlayedAudio = false;
 
 	void Start () {
 		sentences = new Queue<string>();
 		audioSource = GetComponent<AudioSource>();
 		count = 0;
+		hasPlayedAudio = false; 
 	}
 
 	public void StartDialogue (Dialogue dialogue)
@@ -41,8 +35,12 @@ public class Gerarddia : MonoBehaviour {
 		{
 		DialogueMan.SetActive(true);
 		nameText.text = dialogue.name;
-		audioSource.PlayOneShot(Papiergeluid);
-        
+
+		if (!hasPlayedAudio) {
+				audioSource.PlayOneShot(Papiergeluid);
+				hasPlayedAudio = true; // Zet op true zodat het niet opnieuw wordt afgespeeld
+			}
+			
 		foreach (string sentence in dialogue.sentences)
 		{
 			sentences.Enqueue(sentence);
