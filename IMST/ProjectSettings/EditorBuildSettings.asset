@@ -33,7 +33,7 @@ EditorBuildSettings:
     path: Assets/versies/supermaketnaauto.unity
     guid: 6b272fe90e62e4041bce653f5dcbbff3
   - enabled: 1
-    path: Assets/Scenes/backhome.unity
+    path: Assets/versies/backhome.unity
     guid: 6ad6522b5e2af40d0af0ec09fcfdfa7a
   - enabled: 1
     path: Assets/versies/outside4.3.unity
