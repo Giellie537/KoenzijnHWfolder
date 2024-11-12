@@ -4679,6 +4679,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d012273009b272240b706f2908d1600f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 416972892}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d012273009b272240b706f2908d1600f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 416972900}
   m_SourcePrefab: {fileID: 100100000, guid: d012273009b272240b706f2908d1600f, type: 3}
 --- !u!1 &416972891 stripped
 GameObject:
@@ -4948,6 +4951,23 @@ CapsuleCollider:
   m_Height: 2.1871636
   m_Direction: 1
   m_Center: {x: -0, y: 0.59358186, z: -0.15436558}
+--- !u!114 &416972900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416972891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b972861ead4b4ee185fc52de33d1c36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueMan: {fileID: 0}
+  nameText: {fileID: 0}
+  dialogueText: {fileID: 0}
+  autoCloseInTime: 10
+  Papiergeluid: {fileID: 0}
 --- !u!1 &424002513
 GameObject:
   m_ObjectHideFlags: 0
@@ -26247,6 +26267,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: baf32446f4a7c4f4c8bdb98420487899, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2011564142}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: baf32446f4a7c4f4c8bdb98420487899, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2011564151}
   m_SourcePrefab: {fileID: 100100000, guid: baf32446f4a7c4f4c8bdb98420487899, type: 3}
 --- !u!1 &2011564141 stripped
 GameObject:
@@ -26540,6 +26563,23 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2011564151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011564141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4048189264a294293b4bdd5b86689900, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueMan: {fileID: 0}
+  nameText: {fileID: 0}
+  dialogueText: {fileID: 0}
+  autoCloseInTime: 10
+  Papiergeluid: {fileID: 0}
 --- !u!1 &2012112269
 GameObject:
   m_ObjectHideFlags: 0

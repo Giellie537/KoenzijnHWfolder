@@ -55,7 +55,7 @@ public class DialogueTrigger : MonoBehaviour {
 
 public void TriggerDialogueangiereturn()
 	{
-        FindObjectOfType<angieretrun>().StartDialogue(dialogue);
+        FindObjectOfType<angiereturn>().StartDialogue(dialogue);
 	}
 	public void TriggerDialoguemayreturn()
 	{
