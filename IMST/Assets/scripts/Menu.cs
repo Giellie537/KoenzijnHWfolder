@@ -7,10 +7,10 @@ using UnityEngine.SceneManagement;
 public class Menu : MonoBehaviour
 {
     public void Playgame() {
-        SceneManager.LoadSceneAsync(8);
+        SceneManager.LoadSceneAsync(3);
     }
     public void Controls() {
-        SceneManager.LoadSceneAsync(6);
+        SceneManager.LoadSceneAsync(4);
     }
 
     public void Quitgame() {
