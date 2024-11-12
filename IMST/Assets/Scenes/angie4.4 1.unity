@@ -1131,6 +1131,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!114 &87691989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1952,7 +1953,6 @@ MonoBehaviour:
   notiftext: {fileID: 730553229}
   questinfo: {fileID: 1944257066}
   Papiergeluid: {fileID: 8300000, guid: db04b9f76bb024bac8cd324adc4b39af, type: 3}
-  delayTime: 1
 --- !u!1 &127604081
 GameObject:
   m_ObjectHideFlags: 0
@@ -3064,6 +3064,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!114 &177606182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3676,6 +3677,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!114 &271551147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4080,6 +4082,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!114 &317045903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7793,6 +7796,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!114 &681460207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8373,6 +8377,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!114 &724751880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8904,6 +8909,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!114 &778227843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10102,6 +10108,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!114 &917613918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12188,6 +12195,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!114 &1133020225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13110,6 +13118,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!54 &1200332917
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14343,6 +14352,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!114 &1277046301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15172,6 +15182,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!114 &1351463681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16183,6 +16194,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!114 &1382943958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17415,6 +17427,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!114 &1486699885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18533,6 +18546,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!114 &1540117446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19692,6 +19706,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!114 &1629191367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22751,6 +22766,7 @@ MonoBehaviour:
   addtext: {fileID: 0}
   quest1: 0
   quest2: 0
+  openend: 0
 --- !u!114 &1917986606
 MonoBehaviour:
   m_ObjectHideFlags: 0
