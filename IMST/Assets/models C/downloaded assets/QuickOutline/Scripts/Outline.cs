@@ -22,6 +22,7 @@ public class Outline : MonoBehaviour {
     OutlineHidden,
     OutlineAndSilhouette,
     SilhouetteOnly
+
   }
 
   public Mode OutlineMode {
