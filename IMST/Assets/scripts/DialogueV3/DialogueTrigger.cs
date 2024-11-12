@@ -39,4 +39,8 @@ public class DialogueTrigger : MonoBehaviour {
 	{
         FindObjectOfType<Angiesquest>().StartDialogue(dialogue);
 	}
+		  public void TriggerDialoguesarahsafed()
+	{
+        FindObjectOfType<sarahsafed>().StartDialogue(dialogue);
+	}
 }
