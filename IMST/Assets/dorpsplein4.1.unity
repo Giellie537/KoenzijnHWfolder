@@ -35228,7 +35228,20 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - 
+    - 'Koen: (1/6)
+
+      Hi Tim! '
+    - 'Tim: (2/6)
+
+      Why are you pretending to be friendly? '
+    - 'Koen: (3/6)
+
+      What do you mean? '
+    - "Tim: (4/6)\nYou didn\u2019t come help with the garden yesterday! "
+    - "Koen: (5/6)\nI wanted to, but I was too busy helping other people\u2026 "
+    - 'Tim: (6/6)
+
+      Yea right. Just leave me alone.    '
 --- !u!114 &2145946164
 MonoBehaviour:
   m_ObjectHideFlags: 0
