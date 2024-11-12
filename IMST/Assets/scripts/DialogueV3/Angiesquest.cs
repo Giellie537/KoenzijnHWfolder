@@ -104,7 +104,7 @@ public class Angiesquest : MonoBehaviour{
         IEnumerator Textweg() {
         yield return new WaitForSeconds(5);
         notif.SetActive(false);
-		outline.enabled = false;
+		// outline.enabled = false;
 		
      }
 	 

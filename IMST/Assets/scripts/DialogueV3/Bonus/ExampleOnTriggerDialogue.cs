@@ -10,7 +10,7 @@ public class ExampleOnTriggerDialogue : MonoBehaviour
     private AudioSource audioSource;
     public AudioClip Papiergeluid;
 
-    public bool collided = false;
+    public bool collided = true;
 
 
     void Start(){
@@ -19,7 +19,7 @@ public class ExampleOnTriggerDialogue : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(collided == false){
+        if(collided == true){
         FindObjectOfType<DialogueManager2>().EndDialogue();
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
         collided = true;

@@ -7,12 +7,16 @@ public class Sarahdialoguetrigger : MonoBehaviour
 
     public Meel meel;
     public melk Melk;
+
+ public BoxCollider boxcollider;
     private bool triggered = false;
 
     void OnTriggerEnter(){
-        if(meel.meelgepakt == true && Melk.melkgepakt == true && triggered == false){
+        if(meel.meelgepakt == true && Melk.melkgepakt == true){
+            
             Debug.Log("trigger sarah dialogue");
-            triggered = true;
+            // triggered = false;
+            
         }
         else{
             Debug.Log("nothing happens");
