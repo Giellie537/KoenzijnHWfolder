@@ -23,6 +23,7 @@ public class Angiesquest : MonoBehaviour{
     public AudioClip Papiergeluid;
 
 	private int count; 
+	public Outline outline;
 	// Use this for initialization
 
 	// public float delayTime = 1.0f;
@@ -103,6 +104,8 @@ public class Angiesquest : MonoBehaviour{
         IEnumerator Textweg() {
         yield return new WaitForSeconds(5);
         notif.SetActive(false);
+		outline.enabled = false;
+		
      }
 	 
 	//  IEnumerator ReenableDialogueManAfterDelay() {
