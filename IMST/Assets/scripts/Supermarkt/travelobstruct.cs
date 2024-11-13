@@ -69,7 +69,7 @@ public class travelobstruct : MonoBehaviour
     }
 
     public void travelwoman1() {
-        SceneManager.LoadScene("angie4.1", LoadSceneMode.Single);
+        SceneManager.LoadScene("angie5", LoadSceneMode.Single);
          travelUI.SetActive(false);
         koen.SetActive(true);
         Cursor.visible = false;
@@ -80,7 +80,7 @@ public class travelobstruct : MonoBehaviour
 
 
     public void travelsupermarkt1() {
-        SceneManager.LoadScene("supermarkt5.3", LoadSceneMode.Single);
+        SceneManager.LoadScene("supermarkt10", LoadSceneMode.Single);
          travelUI.SetActive(false);
         koen.SetActive(true);
         Cursor.visible = false;
@@ -90,7 +90,7 @@ public class travelobstruct : MonoBehaviour
     }
 
     public void travelhome1() {
-        SceneManager.LoadScene("backhome", LoadSceneMode.Single);
+        SceneManager.LoadScene("backhome.1", LoadSceneMode.Single);
          travelUI.SetActive(false);
         koen.SetActive(true);
         Cursor.visible = false;
@@ -101,7 +101,7 @@ public class travelobstruct : MonoBehaviour
     }
 
     public void traveldorp1() {
-        SceneManager.LoadScene("dorpsplein3", LoadSceneMode.Single);
+        SceneManager.LoadScene("dorpsplein8.1", LoadSceneMode.Single);
          travelUI.SetActive(false);
         koen.SetActive(true);
         Cursor.visible = false;
