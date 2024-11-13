@@ -7,7 +7,6 @@ using TMPro;
 public class DialogueManager2 : MonoBehaviour {
 
 	public GameObject DialogueMan;
-	public TextMeshProUGUI nameText;
 	public TextMeshProUGUI dialogueText;
 
 
@@ -29,7 +28,6 @@ public class DialogueManager2 : MonoBehaviour {
 		if(count <= 12)
 		{
         DialogueMan.SetActive(true);
-		nameText.text = dialogue.name;
 		Debug.Log("hoppa");
 
 		foreach (string sentence in dialogue.sentences)

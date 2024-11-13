@@ -32206,10 +32206,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DialogueMan: {fileID: 1069845894}
-  nameText: {fileID: 0}
   dialogueText: {fileID: 1258072286}
   autoCloseInTime: 10
-  Papiergeluid: {fileID: 0}
+  Papiergeluid: {fileID: 8300000, guid: 703f99112cb2642479cb578f4b0ab2c3, type: 3}
 --- !u!4 &1291812235 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d78cc652fe8318940abce01e3b10a3f2, type: 3}
@@ -39186,7 +39185,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DialogueMan: {fileID: 1629960570}
-  nameText: {fileID: 0}
   dialogueText: {fileID: 1656065387}
   autoCloseInTime: 5
 --- !u!114 &1560698243
