@@ -15,12 +15,6 @@ EditorBuildSettings:
     path: Assets/versies/koenshuis9.1.unity
     guid: 86748169be851fa459ac88ecc25e655f
   - enabled: 1
-    path: Assets/Scenes/menu.unity
-    guid: 388a031ed6b7e3a47815541e770208ed
-  - enabled: 1
-    path: Assets/Scenes/menucontrols.unity
-    guid: 201e86b25d66c1940a6fe724b77f4ef6
-  - enabled: 1
     path: Assets/versies/outside4.1.unity
     guid: 3c2e0ef88b872874593879fe6376febc
   - enabled: 1
@@ -33,11 +27,44 @@ EditorBuildSettings:
     path: Assets/versies/supermaketnaauto.unity
     guid: 6b272fe90e62e4041bce653f5dcbbff3
   - enabled: 1
+    path: Assets/Scenes/menu.unity
+    guid: 388a031ed6b7e3a47815541e770208ed
+  - enabled: 1
+    path: Assets/Scenes/supermarkt10.unity
+    guid: d7b58c10dee4ca540a2058d7bafe3697
+  - enabled: 1
+    path: Assets/Scenes/superauto1.unity
+    guid: 461bc874e4856427d89b55ea07693c06
+  - enabled: 1
+    path: Assets/Scenes/outsidesunday1.3.unity
+    guid: 74278e3f1ce4db345b3bebf6c54c3f26
+  - enabled: 1
+    path: Assets/Scenes/outside4.4.unity
+    guid: 476203df24f24684e8945e11e0f89f27
+  - enabled: 1
+    path: Assets/Scenes/menucontrols.unity
+    guid: 201e86b25d66c1940a6fe724b77f4ef6
+  - enabled: 1
+    path: Assets/Scenes/dorpsplein8.1.unity
+    guid: e473a830837a6d54086921db468d8f8f
+  - enabled: 1
+    path: Assets/Scenes/backhome.1.unity
+    guid: dd275190c04fe1449b87eeda96023b9d
+  - enabled: 1
+    path: Assets/Scenes/angiesreturn1.1.unity
+    guid: e94670013b00b3843ba67226f505650e
+  - enabled: 1
+    path: Assets/Scenes/angie5.unity
+    guid: 27b4f4769607afc43b5ec73ef6399a3d
+  - enabled: 1
     path: Assets/versies/backhome.unity
     guid: 6ad6522b5e2af40d0af0ec09fcfdfa7a
   - enabled: 1
     path: Assets/versies/outside4.3.unity
     guid: 6fc19630a9645d14e97b5162081d2f61
+  - enabled: 1
+    path: Assets/Scenes/koenshuis10.8.unity
+    guid: 71e95d696a8109a48abee24a751c33a6
   - enabled: 1
     path: Assets/versies/koenshuis10.1.unity
     guid: 7b9db78b40167ea40a6b69c50cec5cbf
