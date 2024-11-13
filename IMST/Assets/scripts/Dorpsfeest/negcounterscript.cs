@@ -8,6 +8,7 @@ public class negcounterscript : MonoBehaviour
 {
     public static float negtotal = 0;
     public Text text;
+    public GameObject texty;
     public bool textaan = false;
     public string sceneToLoad;
     public float fadeDuration = 2f;
@@ -34,6 +35,7 @@ public class negcounterscript : MonoBehaviour
         // Tekst weergeven
         text.text = "I don't think I am welcome here\nI should go home";
         text.enabled = true;
+        texty.SetActive(true);
         Debug.Log("Bericht weergegeven");
 
         StartCoroutine(FadeImagesOutAndLoadScene());
