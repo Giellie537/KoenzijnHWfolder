@@ -7,6 +7,7 @@ public class Sarahdialoguetrigger : MonoBehaviour
 
     public Meel meel;
     public melk Melk;
+    public Dialogue dialogue;
 
  public BoxCollider boxcollider;
     private bool triggered = false;
@@ -15,7 +16,8 @@ public class Sarahdialoguetrigger : MonoBehaviour
         if(meel.meelgepakt == true && Melk.melkgepakt == true){
             
             Debug.Log("trigger sarah dialogue");
-            // triggered = false;
+            FindObjectOfType<DialogueManager2>().StartDialogue2(dialogue);
+            triggered = false;
             
         }
         else{

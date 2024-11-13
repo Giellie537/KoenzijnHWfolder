@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class Menu : MonoBehaviour
 {
     public void Playgame() {
-        SceneManager.LoadSceneAsync(3);
+        SceneManager.LoadSceneAsync(19);
     }
     public void Controls() {
         SceneManager.LoadSceneAsync(4);
@@ -18,6 +18,6 @@ public class Menu : MonoBehaviour
     }
 
     public void Back() {
-        SceneManager.LoadSceneAsync(7);
+        SceneManager.LoadSceneAsync(3);
     }
 }
