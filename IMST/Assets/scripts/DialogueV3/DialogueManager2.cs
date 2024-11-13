@@ -25,10 +25,12 @@ public class DialogueManager2 : MonoBehaviour {
 
 	public void StartDialogue2 (Dialogue dialogue)
 	{
+		
 		if(count <= 12)
 		{
         DialogueMan.SetActive(true);
 		nameText.text = dialogue.name;
+		Debug.Log("hoppa");
 
 		foreach (string sentence in dialogue.sentences)
 		{
@@ -48,7 +50,7 @@ public class DialogueManager2 : MonoBehaviour {
 		
 		if (sentences.Count == 0)
 		{
-			EndDialogue();
+			// EndDialogue();
 			return;
 		}
 
@@ -73,6 +75,7 @@ public class DialogueManager2 : MonoBehaviour {
 
 	public void EndDialogue()
 	{
+		Debug.Log("hahsghahah");
         DialogueMan.SetActive(false);
         sentences = new Queue<string>();
     }
