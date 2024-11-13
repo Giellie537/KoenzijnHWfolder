@@ -101,7 +101,7 @@ public class travelobstruct : MonoBehaviour
     }
 
     public void traveldorp1() {
-        SceneManager.LoadScene("dorpsplein8.1", LoadSceneMode.Single);
+        SceneManager.LoadScene("dorpsplein9.2", LoadSceneMode.Single);
          travelUI.SetActive(false);
         koen.SetActive(true);
         Cursor.visible = false;
@@ -112,7 +112,7 @@ public class travelobstruct : MonoBehaviour
     }
 
         public void travelangiereturn1() {
-        SceneManager.LoadScene("angiesreturn", LoadSceneMode.Single);
+        SceneManager.LoadScene("angiesreturn1.1", LoadSceneMode.Single);
          travelUI.SetActive(false);
         koen.SetActive(true);
         Cursor.visible = false;
