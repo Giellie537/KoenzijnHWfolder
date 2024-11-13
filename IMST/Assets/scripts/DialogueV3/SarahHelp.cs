@@ -7,7 +7,6 @@ using TMPro;
 public class SarahHelp : MonoBehaviour {
 
 	public GameObject DialogueMan;
-	public TextMeshProUGUI nameText;
 	public TextMeshProUGUI dialogueText;
 	
 	public int autoCloseInTime = 10;
@@ -40,7 +39,6 @@ private bool hasPlayedAudio = false;
 		if(count <= 6)
 		{
 		DialogueMan.SetActive(true);
-		nameText.text = dialogue.name;
 		
 		if (!hasPlayedAudio) {
 				audioSource.PlayOneShot(Papiergeluid);

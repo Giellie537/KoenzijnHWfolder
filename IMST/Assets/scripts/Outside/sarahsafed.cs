@@ -5,7 +5,6 @@ using UnityEngine.UI;
 using TMPro;
 public class sarahsafed : MonoBehaviour{
     public GameObject DialogueMan;
-	public TextMeshProUGUI nameText;
 	public TextMeshProUGUI dialogueText;
 	
 	public int autoCloseInTime = 10;
@@ -38,7 +37,6 @@ public class sarahsafed : MonoBehaviour{
 		if(count <= 9)
 		{
 		DialogueMan.SetActive(true);
-		nameText.text = dialogue.name;
 		audioSource.PlayOneShot(Papiergeluid);
         
 		foreach (string sentence in dialogue.sentences)
