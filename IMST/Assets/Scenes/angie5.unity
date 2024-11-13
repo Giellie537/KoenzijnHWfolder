@@ -12603,7 +12603,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DialogueMan: {fileID: 1172688165}
-  nameText: {fileID: 1425792395}
   dialogueText: {fileID: 527708718}
   autoCloseInTime: 5
 --- !u!82 &615958432
@@ -40377,7 +40376,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: Gerard
 --- !u!222 &1933825380
 CanvasRenderer:
   m_ObjectHideFlags: 0

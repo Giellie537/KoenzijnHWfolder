@@ -12,6 +12,7 @@ public class supermarkt : MonoBehaviour
         QuestsuestSystem.instance.addquest();
         QuestsuestSystem.instance.addquest();
         QuestsuestSystem.instance.addquest();
+        QuestsuestSystem.instance.addquest();
     }
 
     // Update is called once per frame
