@@ -12,7 +12,7 @@ public class OnTrigger : MonoBehaviour
     {
         if (other.CompareTag("car"))
         {
-            SceneManager.LoadScene("supermaketnaauto", LoadSceneMode.Single);
+            SceneManager.LoadScene("superauto1", LoadSceneMode.Single);
             
             Debug.Log ("Trigger");
     }
