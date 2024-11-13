@@ -15,7 +15,7 @@ public class outsidesunday : MonoBehaviour
     void Start()
     {
         DialogueMan.SetActive(true);
-        dialogueText.text = "Koen:\nAllright, time to go to the market.";
+        dialogueText.text = "Koen:\nAlright, time to go to the market.";
         StartCoroutine(Textweg());
     }
 
