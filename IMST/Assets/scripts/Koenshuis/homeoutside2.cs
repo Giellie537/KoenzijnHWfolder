@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class homeoutside2 : MonoBehaviour
 {
     void OnTriggerEnter() {
-        SceneManager.LoadScene("outsidesunday1.1", LoadSceneMode.Single);
+        SceneManager.LoadScene("outsidesunday1.3", LoadSceneMode.Single);
         Debug.Log ("Trigger");
     }
 
