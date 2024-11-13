@@ -16,6 +16,10 @@ public class angiereturnstart : MonoBehaviour
     {
         QuestsuestSystem.instance.addquest();
         QuestsuestSystem.instance.addquest();
+        QuestsuestSystem.instance.addquest();
+        QuestsuestSystem.instance.addquest();
+        QuestsuestSystem.instance.addquest();
+        QuestsuestSystem.instance.addquest();
 
         DialogueMan.SetActive(true);
         dialogueText.text = "Koen:\nWow that bus took a while, it's getting late already. I'm afraid I won't be able to help others anymore.";

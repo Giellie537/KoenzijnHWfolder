@@ -14,13 +14,16 @@ public class angiereturn : MonoBehaviour{
 private bool hasPlayedAudio = false;
 	private Queue<string> sentences;
 
-	//reference notification
-	// public GameObject notif;
-    // public Text notiftext;
+	// reference notification
+	public GameObject notif;
+    public Text notiftext;
+	public GameObject button;
 
 	// public Text questinfo;
 	private AudioSource audioSource;
     public AudioClip Papiergeluid;
+    public AudioClip bliep;
+	
 
 	private int count; 
 	// Use this for initialization
@@ -96,24 +99,28 @@ private bool hasPlayedAudio = false;
         sentences = new Queue<string>();
 
 		Debug.Log(count);
-        //notification
-        // notif.SetActive(true);
-        // notiftext.text = "Quest details added";
+        // notification
+        notif.SetActive(true);
+        notiftext.text = "Quest completed";
+				audioSource.PlayOneShot(bliep);
+
 		// questinfo.text = "4kg flour\n3 L milk";
-        // StartCoroutine(Textweg());
+		button.SetActive(false);
+        StartCoroutine(Textweg());
 		// StartCoroutine(ReenableDialogueManAfterDelay());
 
     }
 
-        // IEnumerator Textweg() {
-        // yield return new WaitForSeconds(5);
-        // notif.SetActive(false);
+        IEnumerator Textweg() {
+        yield return new WaitForSeconds(5);
+        notif.SetActive(false);
      
 	 
-// 	 IEnumerator ReenableDialogueManAfterDelay() {
-//     yield return new WaitForSeconds(delayTime);  
-//     DialogueMan.SetActive(true);                 
-// }
+	//  IEnumerator ReenableDialogueManAfterDelay() {
+    // yield return new WaitForSeconds(delayTime);  
+    // DialogueMan.SetActive(true);                 
 }
+}
+
 	
 	
