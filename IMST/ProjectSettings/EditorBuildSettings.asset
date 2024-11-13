@@ -48,13 +48,13 @@ EditorBuildSettings:
     path: Assets/versies/outsidesunday1.1.unity
     guid: bbb5d5cc8f25a084c9c0bfbfe95ba2a6
   - enabled: 1
-    path: Assets/Scenes/supermarkt4.1.unity
+    path: Assets/versies/supermarkt4.1 - Copy.unity
     guid: 70b314c81d7274c4fa8ec2a4337ee940
   - enabled: 1
-    path: Assets/Scenes/dorpsplein3.unity
+    path: Assets/versies/dorpsplein3.unity
     guid: fa061466ae67ef842b0dd0f81d384eb4
   - enabled: 1
-    path: Assets/Scenes/angiesreturn.unity
+    path: Assets/versies/angiesreturn.unity
     guid: 80088180965924b0aae45a336809ca4a
   - enabled: 1
     path: Assets/versies/angie4.1.unity
