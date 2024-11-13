@@ -11,6 +11,7 @@ public GameObject Questoverlay;
 public Text text;
 public bool gepakt = false;
 // public MeshRenderer meshrenderer;
+public GameObject bg;
 
 public GameObject watch;
 
@@ -38,6 +39,7 @@ void Start(){
 
         IEnumerator Textweg2() {
         yield return new WaitForSeconds(3);
+        bg.SetActive(false);
         text.enabled = false;
         }
 
