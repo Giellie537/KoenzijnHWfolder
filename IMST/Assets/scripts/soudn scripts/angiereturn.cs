@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-public class angiereturn : MonoBehaviour
-{
-    public GameObject DialogueMan;
+public class angiereturn : MonoBehaviour{
+
+	public GameObject DialogueMan;
 	public TextMeshProUGUI nameText;
 	public TextMeshProUGUI dialogueText;
 	
@@ -36,7 +36,7 @@ private bool hasPlayedAudio = false;
 
 	public void StartDialogue (Dialogue dialogue)
 	{
-		if(count <= 6)
+		if(count <= 9)
 		{
 		DialogueMan.SetActive(true);
 		nameText.text = dialogue.name;
