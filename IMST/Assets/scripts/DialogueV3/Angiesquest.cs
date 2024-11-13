@@ -13,7 +13,7 @@ public class Angiesquest : MonoBehaviour{
 
 
 	private Queue<string> sentences;
-
+private bool hasPlayedAudio = false;
 	//reference notification
 	public GameObject notif;
     public Text notiftext;
@@ -32,6 +32,7 @@ public class Angiesquest : MonoBehaviour{
 		sentences = new Queue<string>();
 		audioSource = GetComponent<AudioSource>();
 		count = 0;
+		hasPlayedAudio = false; 
 	}
 
 	public void StartDialogue (Dialogue dialogue)
@@ -40,7 +41,11 @@ public class Angiesquest : MonoBehaviour{
 		{
 		DialogueMan.SetActive(true);
 		nameText.text = dialogue.name;
-		audioSource.PlayOneShot(Papiergeluid);
+		// audioSource.PlayOneShot(Papiergeluid);
+		if (!hasPlayedAudio) {
+				audioSource.PlayOneShot(Papiergeluid);
+				hasPlayedAudio = true; // Zet op true zodat het niet opnieuw wordt afgespeeld
+			}
         
 		foreach (string sentence in dialogue.sentences)
 		{

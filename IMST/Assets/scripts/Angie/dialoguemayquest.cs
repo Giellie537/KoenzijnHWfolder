@@ -6,57 +6,64 @@ using TMPro;
 
 public class Dialoguemayquest : MonoBehaviour {
 
-	public GameObject DialogueMan;
+public GameObject DialogueMan;
 	public TextMeshProUGUI nameText;
 	public TextMeshProUGUI dialogueText;
+	
+	public int autoCloseInTime = 10;
 
-    public Image buttonimage;
-    public Button buttonbutton;
-    public GameObject TextParent;
-
-	public int autoCloseInTime = 0;
-
-	private AudioSource audioSource;
-    public AudioClip Papiergeluid;
 
 	private Queue<string> sentences;
-
+private bool hasPlayedAudio = false;
 	//reference notification
 	public GameObject notif;
     public Text notiftext;
 
 	public Text questinfo;
-private int count; 
+	private AudioSource audioSource;
+    public AudioClip Papiergeluid;
+
+	private int count; 
+	public Outline outline;
 	// Use this for initialization
-	void Start1 () {
+
+	// public float delayTime = 1.0f;
+
+	void Start () {
 		sentences = new Queue<string>();
-		audioSource = GetComponent<AudioSource>();    
-		 count = 0;
+		audioSource = GetComponent<AudioSource>();
+		count = 0;
+		hasPlayedAudio = false; 
 	}
 
-	public void StartDialogue1 (Dialogue dialogue)
+	public void StartDialogue (Dialogue dialogue)
 	{
-    if(count <= 13)
+		if(count <= 5)
 		{
-        DialogueMan.SetActive(true);
+		DialogueMan.SetActive(true);
 		nameText.text = dialogue.name;
-		audioSource.PlayOneShot(Papiergeluid);
-
+		// audioSource.PlayOneShot(Papiergeluid);
+		if (!hasPlayedAudio) {
+				audioSource.PlayOneShot(Papiergeluid);
+				hasPlayedAudio = true; // Zet op true zodat het niet opnieuw wordt afgespeeld
+			}
+        
 		foreach (string sentence in dialogue.sentences)
 		{
 			sentences.Enqueue(sentence);
 		}
-
 		count++;
-		DisplayNextSentence1();
+		DisplayNextSentence();
 		} else{
 			EndDialogue();
 			count = 0;
 			return;
+			
+			
 		}
 	}
 
-	public void DisplayNextSentence1 ()
+	public void DisplayNextSentence ()
 	{
 		
 		if (sentences.Count == 0)
@@ -67,10 +74,10 @@ private int count;
 
 		string sentence = sentences.Dequeue();
 		StopAllCoroutines();
-		StartCoroutine(TypeSentence1(sentence, autoCloseInTime));
+		StartCoroutine(TypeSentence(sentence, autoCloseInTime));
 	}
 
-	IEnumerator TypeSentence1 (string sentence, int autoCloseInTime)
+	IEnumerator TypeSentence (string sentence, int autoCloseInTime)
 	{
 		dialogueText.text = "";
 		foreach (char letter in sentence.ToCharArray())
@@ -79,33 +86,40 @@ private int count;
 			yield return null;
 		}
 
-		// //sluit messagebox na X seconden.
+		//sluit messagebox na X seconden.
 		// yield return new WaitForSeconds(autoCloseInTime);
-        // EndDialogue1();
+        // EndDialogue();
     }
 
 	public void EndDialogue()
 	{
+		Debug.Log("ikdoet");
         DialogueMan.SetActive(false);
         sentences = new Queue<string>();
-		Debug.Log("end");
 
+		Debug.Log(count);
         //notification
         notif.SetActive(true);
         notiftext.text = "Quest details added";
-
-        buttonimage.enabled = true;
-        buttonbutton.enabled = true;
-        TextParent.SetActive(true);
-        QuestsuestSystem.instance.addquest();
-
-        StartCoroutine(Textweg3());
+		questinfo.text = "4kg flour\n3 L milk";
+        StartCoroutine(Textweg());
+		// StartCoroutine(ReenableDialogueManAfterDelay());
 
     }
 
-        IEnumerator Textweg3() {
-        yield return new WaitForSeconds(3);
+        IEnumerator Textweg() {
+        yield return new WaitForSeconds(5);
         notif.SetActive(false);
+		// outline.enabled = false;
+		
      }
+	 
+	//  IEnumerator ReenableDialogueManAfterDelay() {
+    // yield return new WaitForSeconds(delayTime);  
+    // DialogueMan.SetActive(true);                 
+// }
+	
+	
+
 
 }

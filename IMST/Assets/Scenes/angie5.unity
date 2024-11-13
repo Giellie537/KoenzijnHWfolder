@@ -12423,9 +12423,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f187db97ae867461882b559076421ddc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueMan: {fileID: 355740828}
-  nameText: {fileID: 1422161651}
-  dialogueText: {fileID: 1637146108}
+  DialogueMan: {fileID: 1172688165}
+  nameText: {fileID: 1425792395}
+  dialogueText: {fileID: 527708718}
   autoCloseInTime: 5
 --- !u!82 &615958432
 AudioSource:
@@ -18582,6 +18582,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: baf32446f4a7c4f4c8bdb98420487899, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1376456275}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: baf32446f4a7c4f4c8bdb98420487899, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1376456280}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: baf32446f4a7c4f4c8bdb98420487899, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1376456274}
@@ -27436,14 +27439,12 @@ MonoBehaviour:
   DialogueMan: {fileID: 1172688165}
   nameText: {fileID: 1425792395}
   dialogueText: {fileID: 527708718}
-  buttonimage: {fileID: 1486699886}
-  buttonbutton: {fileID: 1486699885}
-  TextParent: {fileID: 562454044}
   autoCloseInTime: 2
-  Papiergeluid: {fileID: 8300000, guid: 1ac02f887251545acbedb0afab0a4aed, type: 3}
   notif: {fileID: 414402432}
   notiftext: {fileID: 730553229}
   questinfo: {fileID: 1023970645}
+  Papiergeluid: {fileID: 8300000, guid: 1ac02f887251545acbedb0afab0a4aed, type: 3}
+  outline: {fileID: 0}
 --- !u!114 &1376456274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27492,7 +27493,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1376456274}
         m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
+        m_MethodName: TriggerDialogueDialoguemayquest
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -27519,7 +27520,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 1
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -27589,6 +27590,24 @@ CapsuleCollider:
   m_Height: 2.2148058
   m_Direction: 1
   m_Center: {x: 0.0030219974, y: 0.6074034, z: 0.02693028}
+--- !u!114 &1376456280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376456269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0.4745098, g: 1, b: 0.83137256, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &1380317469
 GameObject:
   m_ObjectHideFlags: 0
@@ -28714,7 +28733,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -33435,7 +33454,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4281874488
   m_fontColor: {r: 0.21960784, g: 0.21960784, b: 0.21960784, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
