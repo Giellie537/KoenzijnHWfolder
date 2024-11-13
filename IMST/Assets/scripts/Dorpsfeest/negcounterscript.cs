@@ -67,7 +67,7 @@ public class negcounterscript : MonoBehaviour
             elapsedTime += Time.deltaTime;
             yield return new WaitForSeconds(5);
         
-            SceneManager.LoadScene(28);
+            SceneManager.LoadScene(27);
         }
         
         image.color = new Color(0, 0, 0, 1); // Zorg dat de kleur volledig zwart wordt aan het einde
