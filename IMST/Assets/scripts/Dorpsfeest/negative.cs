@@ -11,7 +11,7 @@ public class negative : MonoBehaviour
     public void add(){
         if(!hasInteracted){
         negcount += negcountAdd;
-        negcounterscript.addnegative(negcount);
+        negcounterscript.AddNegative(negcount);
         Debug.Log(negcounterscript.negtotal);
         hasInteracted = true;
         }

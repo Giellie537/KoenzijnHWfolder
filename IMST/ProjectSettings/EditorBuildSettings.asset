@@ -89,4 +89,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/versies/angie4 - Copy.unity
     guid: 8994643359b76e540bb71b3a9af247ca
+  - enabled: 1
+    path: Assets/Scenes/credits.unity
+    guid: 447921f76b9844fd8913bb9042a3c2ee
+  - enabled: 1
+    path: Assets/dorpsplein9.unity
+    guid: 487c44e75dcd4364da19765cbe2a0271
   m_configObjects: {}
