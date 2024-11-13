@@ -9958,6 +9958,129 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4213398336769652, guid: 9b49303c34b100f4f85015f960f99575, type: 3}
   m_PrefabInstance: {fileID: 302219298}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &307667308 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5329fc318b70ea0408200e4a84798614, type: 3}
+  m_PrefabInstance: {fileID: 1001552573}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &307667309
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307667308}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 81792e488c2c77749be4c93dff4184b7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &307667311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307667308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca5080adfad054d42b940c47760723dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences:
+    - "Koen(2/4): \nWhat do you mean? "
+    - 'Guy(3/4):
+
+      You barely helped people with quests yesterday! I thought
+      you were better than this. '
+    - "Koen(4/4): \nBut I was helping all day\u2026.  "
+--- !u!114 &307667312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307667308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: decbc2b7e688e4c9d86f858dc1afc70a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: 
+  cursor: {fileID: 21300000, guid: e9715cc6f015ad4439b371a79b6c7562, type: 3}
+  interactFunction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 307667311}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogueGuy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!136 &307667313
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307667308}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.31778145
+  m_Height: 2.6656127
+  m_Direction: 1
+  m_Center: {x: 0.029015036, y: 0.33280638, z: 0.08174405}
+--- !u!33 &307667314
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307667308}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &307667316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307667308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9016da27b92ee654b901146a538f07ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueMan: {fileID: 947326463}
+  dialogueText: {fileID: 1657810546}
+  autoCloseInTime: 10
+  delayTime: 1
 --- !u!1 &307854485
 GameObject:
   m_ObjectHideFlags: 0
@@ -19600,7 +19723,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!136 &597620255
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -19702,7 +19825,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DialogueMan: {fileID: 947326463}
-  nameText: {fileID: 0}
   dialogueText: {fileID: 1657810546}
   autoCloseInTime: 5
   notif: {fileID: 0}
@@ -30325,6 +30447,93 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000074014}
   m_CullTransparentMesh: 1
+--- !u!1001 &1001552573
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 5329fc318b70ea0408200e4a84798614, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.4226958
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5329fc318b70ea0408200e4a84798614, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.4226958
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5329fc318b70ea0408200e4a84798614, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.4226958
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5329fc318b70ea0408200e4a84798614, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 73.982
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5329fc318b70ea0408200e4a84798614, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5329fc318b70ea0408200e4a84798614, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 19.197
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5329fc318b70ea0408200e4a84798614, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.82029754
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5329fc318b70ea0408200e4a84798614, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5329fc318b70ea0408200e4a84798614, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5719371
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5329fc318b70ea0408200e4a84798614, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5329fc318b70ea0408200e4a84798614, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5329fc318b70ea0408200e4a84798614, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -69.771
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5329fc318b70ea0408200e4a84798614, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5329fc318b70ea0408200e4a84798614, type: 3}
+      propertyPath: m_Name
+      value: steve
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5329fc318b70ea0408200e4a84798614, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 307667314}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5329fc318b70ea0408200e4a84798614, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 307667313}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5329fc318b70ea0408200e4a84798614, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 307667312}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5329fc318b70ea0408200e4a84798614, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 307667311}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5329fc318b70ea0408200e4a84798614, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 307667316}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5329fc318b70ea0408200e4a84798614, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 307667309}
+  m_SourcePrefab: {fileID: 100100000, guid: 5329fc318b70ea0408200e4a84798614, type: 3}
 --- !u!1001 &1004412288
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53302,8 +53511,8 @@ Transform:
   m_GameObject: {fileID: 1939509041}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 70.3, y: 1.9, z: 36.01}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 70.3, y: 2.0021, z: 36.01}
+  m_LocalScale: {x: 1, y: 1.1021, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1233205921}
@@ -54676,7 +54885,7 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
-    - 'Guy:
+    - 'Guy(1/4):
 
       Daring to show your face today huh? '
   Papiergeluid: {fileID: 0}
@@ -54694,7 +54903,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DialogueMan: {fileID: 947326463}
-  nameText: {fileID: 0}
   dialogueText: {fileID: 1657810546}
   autoCloseInTime: 5
 --- !u!1001 &1984447484
@@ -60460,3 +60668,4 @@ SceneRoots:
   - {fileID: 1983384352}
   - {fileID: 597620258}
   - {fileID: 705673476}
+  - {fileID: 1001552573}

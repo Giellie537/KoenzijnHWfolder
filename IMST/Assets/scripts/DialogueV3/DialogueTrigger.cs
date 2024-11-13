@@ -15,6 +15,10 @@ public class DialogueTrigger : MonoBehaviour {
 	{
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
 	}
+	 public void TriggerDialogueGuy ()
+	{
+        FindObjectOfType<dialogueGuy>().StartDialogue(dialogue);
+	}
 	  public void TriggerDialogueGerard ()
 	{
         FindObjectOfType<Gerarddia>().StartDialogue(dialogue);

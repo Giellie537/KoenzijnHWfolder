@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 
 
-public class DialogueManager : MonoBehaviour {
+public class dialogueGuy : MonoBehaviour {
 
 	public GameObject DialogueMan;
 	public TextMeshProUGUI dialogueText;
@@ -15,13 +15,6 @@ public class DialogueManager : MonoBehaviour {
 
 	private Queue<string> sentences;
 
-	//reference notification
-	public GameObject notif;
-    public Text notiftext;
-
-	public Text questinfo;
-	private AudioSource audioSource;
-    public AudioClip Papiergeluid;
 
 	private int count; 
 	// Use this for initialization
@@ -30,16 +23,14 @@ public class DialogueManager : MonoBehaviour {
 
 	void Start () {
 		sentences = new Queue<string>();
-		audioSource = GetComponent<AudioSource>();
 		count = 0;
 	}
 
 	public void StartDialogue (Dialogue dialogue)
 	{
-		if(count <= 10)
+		if(count <= 2)
 		{
 		DialogueMan.SetActive(true);
-		audioSource.PlayOneShot(Papiergeluid);
         
 		foreach (string sentence in dialogue.sentences)
 		{
@@ -92,18 +83,8 @@ public class DialogueManager : MonoBehaviour {
 
 		Debug.Log(count);
         //notification
-        notif.SetActive(true);
-        notiftext.text = "Quest details added";
-		questinfo.text = "4kg flour\n3 L milk";
-        StartCoroutine(Textweg());
-		StartCoroutine(ReenableDialogueManAfterDelay());
-
     }
 
-        IEnumerator Textweg() {
-        yield return new WaitForSeconds(5);
-        notif.SetActive(false);
-     }
 	 
 	 IEnumerator ReenableDialogueManAfterDelay() {
     yield return new WaitForSeconds(delayTime);  
