@@ -2743,7 +2743,7 @@ MonoBehaviour:
   autoCloseInTime: 10
   notif: {fileID: 414402432}
   notiftext: {fileID: 730553229}
-  questinfo: {fileID: 1944257066}
+  questinfo: {fileID: 1101760499}
   Papiergeluid: {fileID: 8300000, guid: db04b9f76bb024bac8cd324adc4b39af, type: 3}
   outline: {fileID: 0}
 --- !u!1 &127604081
@@ -5643,7 +5643,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 90, y: -385}
+  m_AnchoredPosition: {x: 90, y: -345}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &271551146
@@ -13612,7 +13612,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 90, y: -465}
+  m_AnchoredPosition: {x: 90, y: -425}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &681460206
@@ -14394,7 +14394,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 90, y: -425}
+  m_AnchoredPosition: {x: 90, y: -385}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &724751879
@@ -15410,7 +15410,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 90, y: -265}
+  m_AnchoredPosition: {x: 90, y: -225}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &778227842
@@ -18582,6 +18582,7 @@ MonoBehaviour:
   Questoverlay: {fileID: 0}
   text: {fileID: 1590724541}
   gepakt: 1
+  bg: {fileID: 0}
   watch: {fileID: 0}
 --- !u!114 &945380944
 MonoBehaviour:
@@ -20468,7 +20469,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 128.63, y: -240.00005}
-  m_SizeDelta: {x: 258.98, y: 480}
+  m_SizeDelta: {x: 258.98, y: 440}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1050236048
 MonoBehaviour:
@@ -21616,7 +21617,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 90, y: -345}
+  m_AnchoredPosition: {x: 90, y: -305}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1133020224
@@ -25605,7 +25606,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 90, y: -185}
+  m_AnchoredPosition: {x: 90, y: -145}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1277046300
@@ -27012,7 +27013,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 90, y: -145}
+  m_AnchoredPosition: {x: 90, y: -105}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1351463680
@@ -27181,6 +27182,7 @@ MonoBehaviour:
   Questoverlay: {fileID: 1323860895}
   text: {fileID: 144426935}
   gepakt: 1
+  bg: {fileID: 0}
   watch: {fileID: 0}
 --- !u!23 &1354559160
 MeshRenderer:
@@ -30395,7 +30397,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1486699883
 RectTransform:
   m_ObjectHideFlags: 0
@@ -30430,9 +30432,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   QuestIndicator: {fileID: 0}
   QuestDropdown: {fileID: 0}
-  QuestExtra: {fileID: 0}
-  Community: {fileID: 0}
-  Questinfo: {fileID: 0}
+  QuestExtra: {fileID: 507551943}
+  Community: {fileID: 34720408}
+  Questinfo: {fileID: 907885766}
   Phone: {fileID: 0}
   extended: 0
   triggered: 0
@@ -31826,7 +31828,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 90, y: -305}
+  m_AnchoredPosition: {x: 90, y: -265}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1540117445
@@ -39524,7 +39526,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 90, y: -225}
+  m_AnchoredPosition: {x: 90, y: -185}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1917986605

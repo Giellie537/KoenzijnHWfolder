@@ -13,6 +13,11 @@ public class startauto : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        QuestsuestSystem.instance.addquest();
+        QuestsuestSystem.instance.addquest();
+        QuestsuestSystem.instance.addquest();
+        QuestsuestSystem.instance.addquest();
+
         DialogueMan.SetActive(true);
         dialogueText.text = "Sarah(1/11):\nThanks Koen!";
         StartCoroutine(Textweg());
