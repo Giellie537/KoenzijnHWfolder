@@ -6,27 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/versies/angie3.2.unity
-    guid: 58a2a9d9cac8add4790e1b20e9955627
-  - enabled: 1
-    path: Assets/versies/dorpsplein2.1.unity
-    guid: f3464d50ec27d50439edbc8743a8a484
-  - enabled: 1
-    path: Assets/versies/koenshuis9.1.unity
-    guid: 86748169be851fa459ac88ecc25e655f
-  - enabled: 1
-    path: Assets/versies/outside4.1.unity
-    guid: 3c2e0ef88b872874593879fe6376febc
-  - enabled: 1
-    path: Assets/versies/supermarkt3.unity
-    guid: fad188a18b01a0640a4dd2dc8c5a04c4
-  - enabled: 1
-    path: Assets/Scenes/test.unity
-    guid: fb307cc0d1abee44fa148ae4b89eb6b1
-  - enabled: 1
-    path: Assets/versies/supermaketnaauto.unity
-    guid: 6b272fe90e62e4041bce653f5dcbbff3
-  - enabled: 1
     path: Assets/Scenes/menu.unity
     guid: 388a031ed6b7e3a47815541e770208ed
   - enabled: 1
@@ -45,9 +24,6 @@ EditorBuildSettings:
     path: Assets/Scenes/menucontrols.unity
     guid: 201e86b25d66c1940a6fe724b77f4ef6
   - enabled: 1
-    path: Assets/versies/dorpsplein8.1.unity
-    guid: e473a830837a6d54086921db468d8f8f
-  - enabled: 1
     path: Assets/Scenes/backhome.1.unity
     guid: dd275190c04fe1449b87eeda96023b9d
   - enabled: 1
@@ -57,44 +33,11 @@ EditorBuildSettings:
     path: Assets/Scenes/angie5.unity
     guid: 27b4f4769607afc43b5ec73ef6399a3d
   - enabled: 1
-    path: Assets/versies/backhome.unity
-    guid: 6ad6522b5e2af40d0af0ec09fcfdfa7a
-  - enabled: 1
-    path: Assets/versies/outside4.3.unity
-    guid: 6fc19630a9645d14e97b5162081d2f61
-  - enabled: 1
     path: Assets/Scenes/koenshuis10.8.unity
     guid: 71e95d696a8109a48abee24a751c33a6
   - enabled: 1
-    path: Assets/versies/koenshuis10.1.unity
-    guid: 7b9db78b40167ea40a6b69c50cec5cbf
-  - enabled: 1
-    path: Assets/versies/supermarkt5.3.unity
-    guid: 30f529b2d1ebfa2469d2d61e71ccee8e
-  - enabled: 1
-    path: Assets/versies/outsidesunday1.1.unity
-    guid: bbb5d5cc8f25a084c9c0bfbfe95ba2a6
-  - enabled: 1
-    path: Assets/versies/supermarkt4.1 - Copy.unity
-    guid: 70b314c81d7274c4fa8ec2a4337ee940
-  - enabled: 1
-    path: Assets/versies/dorpsplein3.unity
-    guid: fa061466ae67ef842b0dd0f81d384eb4
-  - enabled: 1
-    path: Assets/versies/angiesreturn.unity
-    guid: 80088180965924b0aae45a336809ca4a
-  - enabled: 1
-    path: Assets/versies/angie4.1.unity
-    guid: df7d49d3ca965104ba2bc8e0ed0ed572
-  - enabled: 1
-    path: Assets/versies/angie4 - Copy.unity
-    guid: 8994643359b76e540bb71b3a9af247ca
-  - enabled: 1
     path: Assets/Scenes/credits.unity
     guid: 447921f76b9844fd8913bb9042a3c2ee
-  - enabled: 1
-    path: Assets/versies/dorpsplein9.unity
-    guid: 487c44e75dcd4364da19765cbe2a0271
   - enabled: 1
     path: Assets/Scenes/dorpsplein9.2.unity
     guid: 47ea5f66b4fb43a48bbac96a2a6e415e
@@ -119,7 +62,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/koenshuis10.9.unity
     guid: d0dacc0d42bf9794a901fe3ad6ad7c8c
-  - enabled: 0
-    path: Assets/Scenes/endscreen.unity
-    guid: 433d48cb24282454aad16b94273b6419
   m_configObjects: {}
