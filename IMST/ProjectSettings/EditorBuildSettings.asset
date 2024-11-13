@@ -95,4 +95,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/dorpsplein9.unity
     guid: 487c44e75dcd4364da19765cbe2a0271
+  - enabled: 1
+    path: Assets/Scenes/endscreen.unity
+    guid: 433d48cb24282454aad16b94273b6419
   m_configObjects: {}

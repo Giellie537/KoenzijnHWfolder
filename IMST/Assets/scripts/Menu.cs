@@ -20,4 +20,8 @@ public class Menu : MonoBehaviour
     public void Back() {
         SceneManager.LoadSceneAsync(3);
     }
+
+    public void Home(){
+        SceneManager.LoadSceneAsync(7);
+    }
 }
