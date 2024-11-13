@@ -16278,7 +16278,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.312
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -16466,7 +16466,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eigepakt: 0
   meshei: {fileID: 670077807}
-  Papiergeluid: {fileID: 0}
+  Papiergeluid: {fileID: 8300000, guid: 80aeebd64925b9044bbdde1fb77ba7d0, type: 3}
 --- !u!1001 &672338904
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21185,7 +21185,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.661
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -23994,7 +23994,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.664
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -24092,7 +24092,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visgepakt: 0
   meshvis: {fileID: 939874400}
-  Papiergeluid: {fileID: 8300000, guid: 80aeebd64925b9044bbdde1fb77ba7d0, type: 3}
+  Papiergeluid: {fileID: 8300000, guid: 60dfed2922e10d2479bfe815e48468c9, type: 3}
 --- !u!114 &939874404
 MonoBehaviour:
   m_ObjectHideFlags: 0
