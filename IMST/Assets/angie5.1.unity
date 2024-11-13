@@ -12603,7 +12603,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DialogueMan: {fileID: 1172688165}
-  nameText: {fileID: 1425792395}
   dialogueText: {fileID: 527708718}
   autoCloseInTime: 5
 --- !u!82 &615958432
@@ -18583,6 +18582,7 @@ MonoBehaviour:
   Questoverlay: {fileID: 0}
   text: {fileID: 1590724541}
   gepakt: 1
+  bg: {fileID: 0}
   watch: {fileID: 0}
 --- !u!114 &945380944
 MonoBehaviour:
@@ -27182,6 +27182,7 @@ MonoBehaviour:
   Questoverlay: {fileID: 1323860895}
   text: {fileID: 144426935}
   gepakt: 1
+  bg: {fileID: 0}
   watch: {fileID: 0}
 --- !u!23 &1354559160
 MeshRenderer:
@@ -29444,7 +29445,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a1c65f9f4923bd24491b24a10f34ef92, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
