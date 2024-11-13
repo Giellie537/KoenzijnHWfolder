@@ -16978,6 +16978,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 526e5cbab34f00946a20e5772e1ce04d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Papiergeluid: {fileID: 0}
 --- !u!95 &679679860
 Animator:
   serializedVersion: 5
@@ -51626,7 +51627,7 @@ MonoBehaviour:
   interactFunction:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 841167373}
+      - m_Target: {fileID: 2019019084}
         m_TargetAssemblyTypeName: Meel, Assembly-CSharp
         m_MethodName: meelpakken
         m_Mode: 1
@@ -54727,8 +54728,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6478536213147159724, guid: 61fa1d54d265ef2448e9c512b70cbed4, type: 3}
-  - {fileID: -3846018093981099296, guid: 61fa1d54d265ef2448e9c512b70cbed4, type: 3}
+  - {fileID: -6478536213147159724, guid: 884a89d8d7dbcb740b11ac644368b0dd, type: 3}
+  - {fileID: -3846018093981099296, guid: 884a89d8d7dbcb740b11ac644368b0dd, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -54757,7 +54758,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132149530700398}
-  m_Mesh: {fileID: -5495902117074765545, guid: 61fa1d54d265ef2448e9c512b70cbed4, type: 3}
+  m_Mesh: {fileID: -5495902117074765545, guid: 884a89d8d7dbcb740b11ac644368b0dd, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
