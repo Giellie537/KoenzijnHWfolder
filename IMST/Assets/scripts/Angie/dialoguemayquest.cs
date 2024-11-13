@@ -100,8 +100,8 @@ private bool hasPlayedAudio = false;
 		Debug.Log(count);
         //notification
         notif.SetActive(true);
-        notiftext.text = "Quest details added";
-		questinfo.text = "4kg flour\n3 L milk";
+        notiftext.text = "New quest added";
+		questinfo.text = "Risotto\nFish";
         StartCoroutine(Textweg());
 		// StartCoroutine(ReenableDialogueManAfterDelay());
 
