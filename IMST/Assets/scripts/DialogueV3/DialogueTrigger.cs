@@ -61,4 +61,8 @@ public void TriggerDialogueangiereturn()
 	{
         FindObjectOfType<mayreturn>().StartDialogue(dialogue);
 	}
+	public void TriggerDialogueDialoguemayquest()
+	{
+        FindObjectOfType<Dialoguemayquest>().StartDialogue(dialogue);
+	}
 }
